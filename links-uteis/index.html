@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rita Rostirolla</title>
+  <meta name="description" content="Sexóloga, terapeuta sexual e mentora de mulheres. Links úteis da Rita Rostirolla.">
+  <meta name="theme-color" content="#16080C">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preload" as="image" href="assets/rita-avatar.webp" type="image/webp">
+
+  <style>
+    @font-face {
+      font-family: 'Lobster';
+      src: url('../fonts/lobster/Lobster-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Source Sans 3';
+      src: url('../fonts/source-sans-3/SourceSans3-wght.ttf') format('truetype');
+      font-weight: 200 900;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    :root {
+      --bg: #16080C;
+      --bg-deep: #0E0508;
+      --bordo: #A40E21;
+      --bordo-deep: #7A0A18;
+      --bordo-glow: #C41A32;
+      --blush: #E8D5D0;
+      --cream: #FAF7F4;
+      --gold: #B8956B;
+      --text: #FAF7F4;
+      --text-soft: rgba(250, 247, 244, 0.72);
+      --font-display: 'Lobster', cursive;
+      --font-body: 'Source Sans 3', system-ui, sans-serif;
+      --radius: 18px;
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { height: 100%; }
+
+    body {
+      min-height: 100%;
+      font-family: var(--font-body);
+      color: var(--text);
+      background:
+        radial-gradient(ellipse 90% 55% at 50% -10%, rgba(164, 14, 33, 0.42), transparent 60%),
+        radial-gradient(ellipse 70% 40% at 80% 100%, rgba(122, 10, 24, 0.32), transparent 55%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg-deep) 100%);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Fundo animado (canvas) ── */
+    .bg {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .bglines {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .glow {
+      position: absolute;
+      left: 50%;
+      top: -12%;
+      transform: translateX(-50%);
+      width: 680px;
+      height: 680px;
+      max-width: 130vw;
+      background: radial-gradient(circle, rgba(164, 14, 33, 0.28), rgba(164, 14, 33, 0) 62%);
+      filter: blur(8px);
+    }
+
+    .cursorfx {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 80;
+      pointer-events: none;
+    }
+
+    .page {
+      position: relative;
+      z-index: 2;
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 20px 40px;
+    }
+
+    .shell {
+      width: 100%;
+      max-width: 420px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 28px;
+    }
+
+    /* ── Avatar ── */
+    .avatar-wrap {
+      position: relative;
+      width: 148px;
+      height: 148px;
+      animation: riseIn 1.1s var(--ease) both;
+    }
+
+    .avatar-wrap::before {
+      content: '';
+      position: absolute;
+      inset: -12px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(164, 14, 33, 0.55) 0%, transparent 70%);
+      filter: blur(8px);
+      z-index: -1;
+      animation: glowPulse 5.8s ease-in-out infinite;
+    }
+
+    .avatar-ring {
+      position: absolute;
+      inset: -6px;
+      border-radius: 50%;
+      background: conic-gradient(from 0deg, #A40E21, #B8956B, #E8D5D0, #C41A32, #7A0A18, #A40E21);
+      animation: spin 6s linear infinite;
+      filter: blur(0.4px);
+      -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 3px), #000 calc(100% - 3px));
+      mask: radial-gradient(farthest-side, transparent calc(100% - 3px), #000 calc(100% - 3px));
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .avatar {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 18%;
+      display: block;
+      border: 3px solid #12070A;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45), 0 0 28px rgba(164, 14, 33, 0.35);
+    }
+
+    @keyframes glowPulse {
+      0%, 100% { opacity: 0.7; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.06); }
+    }
+
+    /* ── Identidade ── */
+    .identity {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      animation: riseIn 1.15s var(--ease) 0.12s both;
+    }
+
+    .name {
+      font-family: var(--font-display);
+      font-size: clamp(2.35rem, 8vw, 2.85rem);
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: 0.01em;
+      color: var(--cream);
+      text-shadow: 0 2px 24px rgba(164, 14, 33, 0.35);
+    }
+
+    .tagline {
+      max-width: 28ch;
+      font-size: 1.02rem;
+      font-weight: 400;
+      line-height: 1.45;
+      color: var(--text-soft);
+    }
+
+    .pill {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin-top: 4px;
+      padding: 8px 15px 8px 13px;
+      border-radius: 999px;
+      background: linear-gradient(180deg, rgba(164, 14, 33, 0.22), rgba(164, 14, 33, 0.08));
+      border: 1px solid rgba(196, 26, 50, 0.28);
+      color: rgba(250, 247, 244, 0.9);
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      backdrop-filter: blur(8px);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.07);
+    }
+
+    .pill i {
+      width: 7px;
+      height: 7px;
+      flex: none;
+      border-radius: 50%;
+      background: var(--bordo-glow);
+      box-shadow: 0 0 8px rgba(196, 26, 50, 0.7);
+    }
+
+    .socials {
+      display: flex;
+      gap: 10px;
+      margin-top: 6px;
+    }
+
+    .socials a {
+      display: grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--cream);
+      transition: transform 0.25s var(--ease), background 0.25s, border-color 0.25s, box-shadow 0.25s;
+    }
+
+    .socials a:hover,
+    .socials a:focus-visible {
+      transform: translateY(-3px);
+      background: rgba(164, 14, 33, 0.28);
+      border-color: rgba(196, 26, 50, 0.5);
+      box-shadow: 0 0 0 4px rgba(164, 14, 33, 0.12);
+      outline: none;
+    }
+
+    .socials svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    /* ── Links ── */
+    .links {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      animation: riseIn 1.2s var(--ease) 0.22s both;
+    }
+
+    .link-card {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      width: 100%;
+      min-height: 76px;
+      padding: 16px 18px 16px 16px;
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, rgba(164, 14, 33, 0.55) 0%, rgba(90, 8, 18, 0.9) 100%);
+      border: 1px solid rgba(232, 213, 208, 0.18);
+      box-shadow:
+        0 10px 32px rgba(0, 0, 0, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+      overflow: hidden;
+      transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+    }
+
+    .link-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 42%;
+      height: 100%;
+      background: linear-gradient(
+        105deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.04) 35%,
+        rgba(255, 255, 255, 0.22) 50%,
+        rgba(255, 255, 255, 0.04) 65%,
+        transparent 100%
+      );
+      transform: translateX(-140%) skewX(-16deg);
+      animation: ctaShine 2.8s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    .link-card:hover,
+    .link-card:focus-visible {
+      transform: translateY(-3px);
+      border-color: rgba(232, 213, 208, 0.35);
+      box-shadow:
+        0 16px 40px rgba(0, 0, 0, 0.42),
+        0 0 0 1px rgba(184, 149, 107, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.14);
+      outline: none;
+    }
+
+    .link-card--lilac {
+      background: linear-gradient(135deg, rgba(186, 150, 230, 0.42) 0%, rgba(98, 62, 150, 0.88) 100%);
+      border-color: rgba(230, 210, 255, 0.28);
+      box-shadow:
+        0 10px 32px rgba(70, 30, 120, 0.28),
+        inset 0 1px 0 rgba(255, 255, 255, 0.16);
+    }
+
+    .link-card--lilac:hover,
+    .link-card--lilac:focus-visible {
+      border-color: rgba(240, 225, 255, 0.45);
+      box-shadow:
+        0 16px 40px rgba(70, 30, 120, 0.4),
+        0 0 0 1px rgba(210, 180, 255, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    }
+
+    .link-card__thumb {
+      position: relative;
+      z-index: 1;
+      flex-shrink: 0;
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      object-fit: cover;
+      object-position: center 20%;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+    }
+
+    .link-card__text {
+      position: relative;
+      z-index: 1;
+      flex: 1;
+      text-align: left;
+      min-width: 0;
+    }
+
+    .link-card__label {
+      display: block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(250, 247, 244, 0.7);
+      margin-bottom: 2px;
+    }
+
+    .link-card__title {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 1.55rem;
+      font-weight: 400;
+      line-height: 1.1;
+      color: var(--cream);
+    }
+
+    .link-card__icon {
+      position: relative;
+      z-index: 1;
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      transition: transform 220ms ease, background 220ms ease;
+    }
+
+    .link-card:hover .link-card__icon,
+    .link-card:focus-visible .link-card__icon {
+      transform: translateX(3px);
+      background: rgba(255, 255, 255, 0.18);
+    }
+
+    .link-card__icon svg {
+      width: 16px;
+      height: 16px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    @keyframes ctaShine {
+      0% { transform: translateX(-140%) skewX(-16deg); }
+      55%, 100% { transform: translateX(320%) skewX(-16deg); }
+    }
+
+    @keyframes riseIn {
+      from {
+        opacity: 0;
+        transform: translateY(22px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .avatar-wrap,
+      .avatar-wrap::before,
+      .avatar-ring,
+      .identity,
+      .links,
+      .link-card::before {
+        animation: none !important;
+      }
+
+      .avatar-wrap,
+      .identity,
+      .links {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg" aria-hidden="true">
+    <canvas class="bglines"></canvas>
+    <div class="glow"></div>
+  </div>
+
+  <main class="page">
+    <div class="shell">
+      <div class="avatar-wrap">
+        <span class="avatar-ring" aria-hidden="true"></span>
+        <picture>
+          <source srcset="assets/rita-avatar.webp" type="image/webp">
+          <img
+            class="avatar"
+            src="assets/rita-avatar.jpg"
+            alt="Rita Rostirolla"
+            width="640"
+            height="640"
+            fetchpriority="high"
+            decoding="async"
+          >
+        </picture>
+      </div>
+
+      <header class="identity">
+        <h1 class="name">Rita Rostirolla</h1>
+        <p class="tagline">Sexóloga · Terapeuta sexual · Mentora de mulheres</p>
+        <span class="pill"><i aria-hidden="true"></i>+800 mil mulheres atendidas</span>
+        <nav class="socials" aria-label="Redes">
+          <a
+            href="https://www.instagram.com/ritarostirolla/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+        </nav>
+      </header>
+
+      <nav class="links" aria-label="Links úteis">
+        <a
+          class="link-card link-card--lilac"
+          href="https://wa.me/5551980907620?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20palestra%20presencial%20da%20Rita%20Rostirolla"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            class="link-card__thumb"
+            src="assets/palestras-256.webp"
+            alt=""
+            width="256"
+            height="256"
+            loading="lazy"
+            decoding="async"
+          >
+          <span class="link-card__text">
+            <span class="link-card__label">Empresas · Eventos · Presencial</span>
+            <span class="link-card__title">Palestras presenciais</span>
+          </span>
+          <span class="link-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </a>
+      </nav>
+    </div>
+  </main>
+
+  <script>
+    /* Linhas fluidas no fundo — reagem ao mouse */
+    (() => {
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const canvas = document.querySelector('.bglines');
+      if (!canvas || reduced) return;
+      const ctx = canvas.getContext('2d');
+      let W = 0, H = 0, dpr = 1, cols = 0, lines = [];
+      const LINE_GAP = 26, STEP = 16;
+      const mouse = { x: -9999, y: -9999, tx: -9999, ty: -9999, active: false };
+
+      function build() {
+        lines = [];
+        const n = Math.ceil(H / LINE_GAP) + 2;
+        for (let i = 0; i < n; i++) {
+          const baseY = i * LINE_GAP;
+          const vpos = H ? baseY / H : 0;
+          const alpha = (0.10 + vpos * 0.28) * 0.85;
+          lines.push({ baseY, phase: i * 0.5, amp: 7 + vpos * 26, alpha });
+        }
+      }
+
+      function resize() {
+        W = window.innerWidth;
+        H = window.innerHeight;
+        dpr = Math.min(window.devicePixelRatio || 1, 2);
+        canvas.width = Math.round(W * dpr);
+        canvas.height = Math.round(H * dpr);
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        cols = Math.ceil(W / STEP) + 1;
+        build();
+      }
+
+      let t = 0;
+      const sigma = 190, sig2 = 2 * sigma * sigma, lift = 90;
+
+      function frame() {
+        t += 0.006;
+        mouse.x += (mouse.tx - mouse.x) * 0.08;
+        mouse.y += (mouse.ty - mouse.y) * 0.08;
+        ctx.clearRect(0, 0, W, H);
+        ctx.globalCompositeOperation = 'lighter';
+        ctx.lineWidth = 1.15;
+
+        for (let li = 0; li < lines.length; li++) {
+          const L = lines[li];
+          ctx.beginPath();
+          let prevX = 0, prevY = 0;
+          for (let c = 0; c <= cols; c++) {
+            const x = c * STEP;
+            let y = L.baseY
+              + L.amp * Math.sin(x * 0.006 + t * 1.2 + L.phase)
+              + (L.amp * 0.5) * Math.sin(x * 0.013 - t * 0.8 + L.phase * 1.7);
+            if (mouse.active) {
+              const dx = x - mouse.x;
+              const dy = L.baseY - mouse.y;
+              y -= lift * Math.exp(-(dx * dx + dy * dy) / sig2);
+            }
+            if (c === 0) ctx.moveTo(x, y);
+            else ctx.quadraticCurveTo(prevX, prevY, (prevX + x) / 2, (prevY + y) / 2);
+            prevX = x;
+            prevY = y;
+          }
+          let a = L.alpha;
+          if (mouse.active) {
+            const dyc = L.baseY - mouse.y;
+            a += 0.22 * Math.exp(-(dyc * dyc) / sig2);
+          }
+          ctx.strokeStyle = 'rgba(212, 120, 130, ' + a.toFixed(3) + ')';
+          ctx.stroke();
+        }
+
+        ctx.globalCompositeOperation = 'source-over';
+        requestAnimationFrame(frame);
+      }
+
+      window.addEventListener('mousemove', (e) => {
+        mouse.tx = e.clientX;
+        mouse.ty = e.clientY;
+        mouse.active = true;
+      }, { passive: true });
+      window.addEventListener('resize', resize);
+      resize();
+      requestAnimationFrame(frame);
+    })();
+
+    /* Rastro de brilho do cursor */
+    (() => {
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduced || !window.matchMedia('(pointer: fine)').matches) return;
+
+      const cv = document.createElement('canvas');
+      cv.className = 'cursorfx';
+      cv.setAttribute('aria-hidden', 'true');
+      document.body.appendChild(cv);
+      const ctx = cv.getContext('2d');
+      let w = 0, h = 0, dpr = 1;
+
+      const fit = () => {
+        dpr = Math.min(window.devicePixelRatio || 1, 2);
+        w = window.innerWidth;
+        h = window.innerHeight;
+        cv.width = Math.round(w * dpr);
+        cv.height = Math.round(h * dpr);
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      };
+      fit();
+      window.addEventListener('resize', fit);
+
+      const parts = [];
+      const MAX = 90;
+      const TAU = Math.PI * 2;
+      let mx = -999, my = -999, hx = -999, hy = -999, started = false, idle = 999, raf = 0;
+
+      function frame() {
+        ctx.clearRect(0, 0, w, h);
+        ctx.globalCompositeOperation = 'lighter';
+        hx += (mx - hx) * 0.17;
+        hy += (my - hy) * 0.17;
+        const headA = Math.max(0, 1 - idle / 40);
+
+        if (headA > 0.01) {
+          const g = ctx.createRadialGradient(hx, hy, 0, hx, hy, 95);
+          g.addColorStop(0, 'rgba(164, 14, 33, ' + 0.2 * headA + ')');
+          g.addColorStop(0.55, 'rgba(196, 26, 50, ' + 0.06 * headA + ')');
+          g.addColorStop(1, 'rgba(164, 14, 33, 0)');
+          ctx.fillStyle = g;
+          ctx.beginPath();
+          ctx.arc(hx, hy, 95, 0, TAU);
+          ctx.fill();
+        }
+
+        for (let i = parts.length - 1; i >= 0; i--) {
+          const p = parts[i];
+          p.x += p.vx;
+          p.y += p.vy;
+          p.vx *= 0.965;
+          p.vy = p.vy * 0.965 + 0.008;
+          p.life -= p.decay;
+          if (p.life <= 0) { parts.splice(i, 1); continue; }
+          const a = p.life * p.life;
+          const r = p.r * (0.55 + p.life * 0.75) * 4;
+          const pg = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, r);
+          pg.addColorStop(0, 'rgba(250, 230, 225, ' + a * 0.75 + ')');
+          pg.addColorStop(0.32, 'rgba(196, 26, 50, ' + a * 0.4 + ')');
+          pg.addColorStop(1, 'rgba(164, 14, 33, 0)');
+          ctx.fillStyle = pg;
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, r, 0, TAU);
+          ctx.fill();
+        }
+
+        ctx.globalCompositeOperation = 'source-over';
+        idle++;
+        if (parts.length || idle < 45) raf = requestAnimationFrame(frame);
+        else raf = 0;
+      }
+
+      window.addEventListener('mousemove', (e) => {
+        const px = mx, py = my;
+        mx = e.clientX;
+        my = e.clientY;
+        if (!started) { hx = mx; hy = my; started = true; }
+        const dx = mx - px, dy = my - py;
+        const speed = Math.min(60, Math.hypot(dx, dy));
+        const n = 1 + Math.floor(speed / 24);
+        for (let i = 0; i < n && parts.length < MAX; i++) {
+          parts.push({
+            x: mx + (Math.random() - 0.5) * 9,
+            y: my + (Math.random() - 0.5) * 9,
+            vx: dx * 0.05 + (Math.random() - 0.5) * 0.55,
+            vy: dy * 0.05 + (Math.random() - 0.5) * 0.55 - 0.12,
+            r: 0.7 + Math.random() * 1.9,
+            life: 1,
+            decay: 0.017 + Math.random() * 0.017,
+          });
+        }
+        idle = 0;
+        if (!raf) raf = requestAnimationFrame(frame);
+      }, { passive: true });
+
+      document.addEventListener('mouseleave', () => { idle = 999; });
+    })();
+  </script>
+</body>
+</html>

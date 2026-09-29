@@ -1,0 +1,1919 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Papo Calcinha com Rita Rostirolla</title>
+  <meta name="description" content="Um papo íntimo, toda terça, só entre nós — relacionamento, desejo, menopausa, autoestima. Com classe, sem tabu e sem plateia.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta name="theme-color" content="#A40E21">
+  <link rel="preload" as="image" href="assets/rita-hero.avif" type="image/avif">
+  <link rel="preload" as="image" href="assets/logo-bordo.avif" type="image/avif">
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '27876642855305865');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=27876642855305865&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <style>
+    @font-face {
+      font-family: 'Lobster';
+      src: url('../fonts/lobster/Lobster-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Source Sans 3';
+      src: url('../fonts/source-sans-3/SourceSans3-wght.ttf') format('truetype');
+      font-weight: 200 900;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Source Sans 3';
+      src: url('../fonts/source-sans-3/SourceSans3-Italic-wght.ttf') format('truetype');
+      font-weight: 200 900;
+      font-style: italic;
+      font-display: swap;
+    }
+
+    :root {
+      --pc-bg-primary: #FAF7F4;
+      --pc-bg-secondary: #F3ECE6;
+      --pc-bg-elevated: #FFFFFF;
+      --pc-bg-intimate: #2A1F22;
+      --pc-brand-primary: #A40E21;
+      --pc-brand-deep: #7A0A18;
+      --pc-brand-soft: #D4636F;
+      --pc-brand-blush: #E8D5D0;
+      --pc-text-primary: #2A2320;
+      --pc-text-secondary: #6B5F5A;
+      --pc-text-muted: #9A8E88;
+      --pc-text-inverse: #FAF7F4;
+      --pc-accent-gold: #B8956B;
+      --pc-accent-sage: #8A9A86;
+      --pc-cta-primary: #A40E21;
+      --pc-cta-hover: #7A0A18;
+      --pc-cta-text: #FFFFFF;
+      --pc-focus-ring: #D4636F;
+      --pc-error: #9E3B3B;
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 20px;
+      --radius-pill: 999px;
+      --shadow-sm: 0 2px 12px rgba(42, 35, 32, 0.06);
+      --shadow-md: 0 8px 32px rgba(42, 35, 32, 0.12);
+      --shadow-lg: 0 16px 48px rgba(42, 31, 34, 0.28);
+      --font-display: 'Lobster', cursive;
+      --font-body: 'Source Sans 3', system-ui, sans-serif;
+      --max-width: 1120px;
+      --max-text: 720px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-body);
+      font-size: 17px;
+      line-height: 1.65;
+      color: var(--pc-text-primary);
+      background: var(--pc-bg-primary);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    /* ── Utilitários ── */
+    .container {
+      width: min(100% - 40px, var(--max-width));
+      margin-inline: auto;
+    }
+
+    .container--narrow {
+      width: min(100% - 40px, var(--max-text));
+      margin-inline: auto;
+    }
+
+    .cta-btn {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 16px;
+      min-height: 64px;
+      padding: 14px 28px 14px 32px;
+      background: linear-gradient(135deg, var(--pc-brand-primary) 0%, var(--pc-brand-deep) 100%);
+      color: var(--pc-cta-text);
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow:
+        0 4px 20px rgba(164, 14, 33, 0.28),
+        inset 0 1px 0 rgba(255, 255, 255, 0.15);
+      transition: transform 220ms ease, box-shadow 220ms ease, background 220ms ease;
+      overflow: hidden;
+    }
+
+    .cta-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 42%;
+      height: 100%;
+      background: linear-gradient(
+        105deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.04) 35%,
+        rgba(255, 255, 255, 0.32) 50%,
+        rgba(255, 255, 255, 0.04) 65%,
+        transparent 100%
+      );
+      transform: translateX(-140%) skewX(-16deg);
+      animation: ctaShine 2.6s ease-in-out infinite;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    @keyframes ctaShine {
+      0% {
+        transform: translateX(-140%) skewX(-16deg);
+      }
+      55% {
+        transform: translateX(320%) skewX(-16deg);
+      }
+      55.01%,
+      100% {
+        transform: translateX(320%) skewX(-16deg);
+      }
+    }
+
+    .cta-btn__text,
+    .cta-btn__icon {
+      position: relative;
+      z-index: 2;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow:
+        0 8px 32px rgba(164, 14, 33, 0.38),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    }
+
+    .cta-btn:focus-visible {
+      outline: 2px solid var(--pc-focus-ring);
+      outline-offset: 3px;
+    }
+
+    .cta-btn__text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2px;
+      text-align: left;
+    }
+
+    .cta-btn__label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      opacity: 0.85;
+    }
+
+    .cta-btn__title {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: 0.01em;
+      text-transform: none;
+    }
+
+    .cta-btn__icon {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: background 220ms ease, transform 220ms ease;
+    }
+
+    .cta-btn__icon svg {
+      width: 18px;
+      height: 18px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .cta-btn:hover .cta-btn__icon {
+      background: rgba(255, 255, 255, 0.2);
+      transform: translateX(3px);
+    }
+
+    .cta-btn--full {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .cta-btn--full .cta-btn__text {
+      align-items: center;
+      text-align: center;
+    }
+
+    /* ── DOBRA 1 — HERO ── */
+    .hero {
+      position: relative;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      background: var(--pc-bg-primary);
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -20%;
+      right: -10%;
+      width: 60%;
+      height: 80%;
+      background: radial-gradient(ellipse, rgba(232, 213, 208, 0.45) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--pc-brand-blush), transparent);
+    }
+
+    .hero__banner {
+      position: relative;
+      z-index: 2;
+      background: var(--pc-brand-primary);
+      color: #FFFFFF;
+      text-align: center;
+      padding: 12px 20px;
+      font-size: clamp(14px, 1.6vw, 18px);
+      font-weight: 600;
+      line-height: 1.4;
+      letter-spacing: 0.01em;
+    }
+
+    .hero__banner strong {
+      font-weight: 700;
+    }
+
+    .hero__banner-inner {
+      margin: 0;
+    }
+
+    .hero__grid {
+      position: relative;
+      z-index: 1;
+      flex: 1;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 48px;
+      align-items: center;
+      padding: 48px 0 64px;
+      animation: fadeUp 1.2s ease-out both;
+    }
+
+    @media (min-width: 900px) {
+      .hero__grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 64px;
+        padding: 56px 0 80px;
+        align-items: stretch;
+      }
+
+      .hero__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .hero__visual {
+        min-height: 0;
+        height: auto;
+        align-self: stretch;
+      }
+
+      .hero__frame {
+        height: 100%;
+        min-height: 100%;
+      }
+
+      .hero__photo {
+        min-height: 100%;
+      }
+    }
+
+    .hero__content {
+      text-align: left;
+    }
+
+    .hero__logo {
+      width: min(280px, 70vw);
+      margin: 0 0 28px;
+    }
+
+    .hero__infos {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 28px;
+    }
+
+    .hero__info-chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 14px;
+      background: var(--pc-brand-primary);
+      color: #FFFFFF;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      border-radius: var(--radius-pill);
+      box-shadow: 0 2px 10px rgba(164, 14, 33, 0.22);
+    }
+
+    .hero__info-chip:nth-child(2) {
+      background: var(--pc-brand-blush);
+      color: var(--pc-brand-deep);
+      box-shadow: none;
+    }
+
+    .hero__headline {
+      font-family: var(--font-display);
+      font-size: clamp(2.1rem, 4.8vw, 3.1rem);
+      font-weight: 400;
+      line-height: 1.25;
+      color: var(--pc-brand-primary);
+      max-width: 20ch;
+      margin-bottom: 20px;
+    }
+
+    .hero__sub {
+      font-size: clamp(1.05rem, 2vw, 1.15rem);
+      line-height: 1.65;
+      color: var(--pc-text-secondary);
+      max-width: 450px;
+      margin-bottom: 36px;
+    }
+
+    .hero__sub strong {
+      color: var(--pc-brand-primary);
+      font-weight: 600;
+    }
+
+    .hero__cta-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .hero__visual {
+      position: relative;
+      height: 100%;
+      min-height: 420px;
+    }
+
+    @media (min-width: 900px) {
+      .hero__visual {
+        min-height: 0;
+      }
+    }
+
+    .hero__frame {
+      position: relative;
+      height: 100%;
+      min-height: inherit;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow:
+        0 24px 64px rgba(42, 31, 34, 0.18),
+        0 0 0 1px rgba(164, 14, 33, 0.08);
+    }
+
+    .hero__frame::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border: 2px solid rgba(184, 149, 107, 0.35);
+      border-radius: var(--radius-lg);
+      z-index: 2;
+      pointer-events: none;
+      margin: 12px;
+    }
+
+    .hero__frame::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(42, 31, 34, 0.35) 0%,
+        transparent 35%,
+        transparent 55%,
+        rgba(42, 31, 34, 0.45) 100%
+      );
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .hero__photo {
+      width: 100%;
+      height: 100%;
+      min-height: inherit;
+      object-fit: cover;
+      object-position: center 15%;
+    }
+
+    .hero__proofs {
+      position: absolute;
+      bottom: 24px;
+      right: 24px;
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 8px;
+    }
+
+    .hero__proof {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 1px;
+      padding: 10px 14px;
+      background: rgba(250, 247, 244, 0.94);
+      backdrop-filter: blur(10px);
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(42, 31, 34, 0.18);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      max-width: 260px;
+      text-align: right;
+    }
+
+    .hero__proof-num {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 400;
+      color: var(--pc-brand-primary);
+      line-height: 1.1;
+    }
+
+    .hero__proof-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--pc-text-secondary);
+      line-height: 1.3;
+    }
+
+    .hero__accent {
+      position: absolute;
+      top: 24px;
+      left: 24px;
+      z-index: 3;
+      padding: 10px 18px;
+      background: var(--pc-brand-primary);
+      color: #FFFFFF;
+      border-radius: var(--radius-pill);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      box-shadow: 0 4px 16px rgba(164, 14, 33, 0.35);
+    }
+
+    .hero__corner {
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      width: 80px;
+      height: 80px;
+      border-top: 2px solid var(--pc-accent-gold);
+      border-right: 2px solid var(--pc-accent-gold);
+      border-radius: 0 var(--radius-lg) 0 0;
+      z-index: 3;
+      pointer-events: none;
+    }
+
+    /* ── DOBRA 2 — BULLETS ── */
+    .topics {
+      padding: 96px 0;
+      background: var(--pc-bg-primary);
+      position: relative;
+    }
+
+    .topics::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1px;
+      height: 64px;
+      background: linear-gradient(to bottom, transparent, var(--pc-brand-blush));
+    }
+
+    .topics__title {
+      font-family: var(--font-display);
+      font-size: clamp(1.85rem, 4.2vw, 2.6rem);
+      font-weight: 400;
+      line-height: 1.25;
+      color: var(--pc-brand-primary);
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    .topics__list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .topics__item {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 20px;
+      align-items: start;
+      padding: 24px 28px;
+      background: var(--pc-bg-elevated);
+      border: 1px solid var(--pc-brand-blush);
+      border-radius: var(--radius-md);
+      box-shadow: none;
+      transition: box-shadow 180ms ease, transform 180ms ease;
+      animation: fadeUp 0.95s ease-out both;
+    }
+
+    .topics__item:hover {
+      box-shadow: none;
+      transform: translateY(-2px);
+    }
+
+    .topics__item:nth-child(1) { animation-delay: 0.1s; }
+    .topics__item:nth-child(2) { animation-delay: 0.2s; }
+    .topics__item:nth-child(3) { animation-delay: 0.3s; }
+    .topics__item:nth-child(4) { animation-delay: 0.4s; }
+    .topics__item:nth-child(5) { animation-delay: 0.5s; }
+    .topics__item:nth-child(6) { animation-delay: 0.6s; }
+    .topics__item:nth-child(7) { animation-delay: 0.7s; }
+
+    .topics__num {
+      font-family: var(--font-display);
+      font-size: 1.85rem;
+      font-weight: 400;
+      color: var(--pc-brand-primary);
+      line-height: 1;
+      padding-top: 2px;
+    }
+
+    .topics__text {
+      font-size: 17px;
+      line-height: 1.6;
+      color: var(--pc-text-primary);
+    }
+
+    .topics__text strong {
+      color: var(--pc-brand-primary);
+      font-weight: 600;
+    }
+
+    .topics__cta {
+      text-align: center;
+      margin-top: 56px;
+    }
+
+    /* ── DOBRA 3 — EXPERT ── */
+    .expert {
+      padding: 96px 0 120px;
+      background: var(--pc-bg-secondary);
+    }
+
+    .expert__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    @media (min-width: 768px) {
+      .expert__grid {
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 64px;
+      }
+    }
+
+    .expert__photo-wrap {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .expert__photo-wrap::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border: 3px solid var(--pc-brand-blush);
+      border-radius: var(--radius-lg);
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .expert__photo {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: center 15%;
+    }
+
+    .expert__title {
+      font-family: var(--font-display);
+      font-size: clamp(1.85rem, 4.2vw, 2.6rem);
+      font-weight: 400;
+      color: var(--pc-brand-primary);
+      margin-bottom: 16px;
+      line-height: 1.25;
+    }
+
+    .expert__bio {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      font-size: 17px;
+      line-height: 1.65;
+      color: var(--pc-text-primary);
+      margin-bottom: 24px;
+    }
+
+    .expert__bio strong {
+      color: var(--pc-brand-primary);
+      font-weight: 600;
+    }
+
+    .expert__credentials {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    @media (max-width: 480px) {
+      .expert__credentials {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .expert__cred {
+      padding: 16px 20px;
+      background: var(--pc-bg-elevated);
+      border-radius: var(--radius-md);
+      border-left: 3px solid var(--pc-accent-gold);
+    }
+
+    .expert__cred-num {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: var(--pc-accent-gold);
+      line-height: 1.1;
+      margin-bottom: 4px;
+    }
+
+    .expert__cred-label {
+      font-size: 14px;
+      color: var(--pc-text-secondary);
+      line-height: 1.4;
+    }
+
+    .expert__tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-bottom: 20px;
+    }
+
+    .expert__tag {
+      padding: 6px 14px;
+      background: var(--pc-brand-blush);
+      color: var(--pc-brand-deep);
+      font-size: 13px;
+      font-weight: 600;
+      border-radius: var(--radius-pill);
+    }
+
+    /* ── MODAL ── */
+    .modal {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 250ms ease, visibility 250ms ease;
+    }
+
+    .modal.is-open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal__backdrop {
+      position: absolute;
+      inset: 0;
+      background: rgba(42, 31, 34, 0.65);
+      backdrop-filter: blur(4px);
+    }
+
+    .modal__dialog {
+      position: relative;
+      width: min(100%, 480px);
+      max-height: 90svh;
+      overflow-y: auto;
+      background: var(--pc-bg-elevated);
+      border-radius: var(--radius-lg);
+      padding: 40px 32px 32px;
+      box-shadow: var(--shadow-lg);
+      transform: translateY(16px) scale(0.98);
+      transition: transform 250ms ease;
+    }
+
+    .modal.is-open .modal__dialog {
+      transform: translateY(0) scale(1);
+    }
+
+    .modal__close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: var(--pc-text-muted);
+      font-size: 24px;
+      line-height: 1;
+      transition: background 180ms ease, color 180ms ease;
+    }
+
+    .modal__close:hover {
+      background: var(--pc-bg-secondary);
+      color: var(--pc-text-primary);
+    }
+
+    .modal__title {
+      font-family: var(--font-display);
+      font-size: 24px;
+      font-weight: 400;
+      color: var(--pc-brand-primary);
+      line-height: 1.25;
+      margin-bottom: 8px;
+      padding-right: 32px;
+    }
+
+    .modal__subtitle {
+      font-size: 16px;
+      color: var(--pc-text-secondary);
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+
+    .form__group {
+      margin-bottom: 16px;
+    }
+
+    .form__label {
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--pc-text-primary);
+      margin-bottom: 6px;
+    }
+
+    .form__control {
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 52px;
+      background: #FFFFFF;
+      border: 1px solid #D9CEC8;
+      border-radius: var(--radius-sm);
+      transition: border-color 180ms ease, box-shadow 180ms ease;
+    }
+
+    .form__control:focus-within {
+      border-color: var(--pc-brand-primary);
+      box-shadow: 0 0 0 3px rgba(164, 14, 33, 0.12);
+    }
+
+    .form__control.is-error {
+      border-color: var(--pc-error);
+    }
+
+    .form__control:focus-within .form__icon {
+      color: var(--pc-brand-primary);
+    }
+
+    .form__icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 18px;
+      height: 18px;
+      color: #94a3b8;
+      pointer-events: none;
+      transition: color 180ms ease;
+      z-index: 1;
+    }
+
+    .form__icon svg {
+      display: block;
+      width: 18px;
+      height: 18px;
+    }
+
+    .form__prefix {
+      position: absolute;
+      left: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--pc-text-secondary);
+      pointer-events: none;
+      z-index: 1;
+      user-select: none;
+    }
+
+    .form__input {
+      width: 100%;
+      height: 100%;
+      padding: 0 16px 0 44px;
+      font-family: var(--font-body);
+      font-size: 17px;
+      color: var(--pc-text-primary);
+      background: transparent;
+      border: none;
+      border-radius: var(--radius-sm);
+    }
+
+    .form__input--whatsapp {
+      padding-left: 78px;
+    }
+
+    .form__input::placeholder {
+      color: var(--pc-text-muted);
+    }
+
+    .form__input:focus {
+      outline: none;
+    }
+
+    .form__error {
+      font-size: 13px;
+      color: var(--pc-error);
+      margin-top: 4px;
+      display: none;
+    }
+
+    .form__error.is-visible {
+      display: block;
+    }
+
+    .form__submit {
+      margin-top: 8px;
+    }
+
+    .form__micro {
+      font-size: 13px;
+      color: var(--pc-text-muted);
+      text-align: center;
+      margin-top: 16px;
+      line-height: 1.5;
+    }
+
+    .form__micro em {
+      font-style: italic;
+      color: var(--pc-text-secondary);
+    }
+
+    /* ── Animações ── */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ── Fundo: linhas em movimento ── */
+    .bg-lines {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 40;
+      pointer-events: none;
+      overflow: hidden;
+      mix-blend-mode: multiply;
+    }
+
+    .bg-lines__track {
+      position: absolute;
+      inset: -20%;
+      width: 140%;
+      height: 140%;
+      background:
+        repeating-linear-gradient(
+          115deg,
+          transparent 0,
+          transparent 48px,
+          rgba(164, 14, 33, 0.045) 48px,
+          rgba(164, 14, 33, 0.045) 49px,
+          transparent 49px,
+          transparent 96px,
+          rgba(184, 149, 107, 0.05) 96px,
+          rgba(184, 149, 107, 0.05) 97px
+        );
+      animation: bgLinesDrift 52s linear infinite;
+      will-change: transform;
+    }
+
+    .bg-lines__track--alt {
+      background:
+        repeating-linear-gradient(
+          -65deg,
+          transparent 0,
+          transparent 72px,
+          rgba(164, 14, 33, 0.03) 72px,
+          rgba(164, 14, 33, 0.03) 73px
+        );
+      animation: bgLinesDriftAlt 72s linear infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes bgLinesDrift {
+      from { transform: translate3d(-4%, 0, 0); }
+      to { transform: translate3d(4%, -3%, 0); }
+    }
+
+    @keyframes bgLinesDriftAlt {
+      from { transform: translate3d(3%, -2%, 0); }
+      to { transform: translate3d(-5%, 2%, 0); }
+    }
+
+    body > .modal {
+      z-index: 100;
+    }
+
+    /* ── Motion de elementos ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition:
+        opacity 1.25s cubic-bezier(0.22, 1, 0.36, 1),
+        transform 1.25s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal--left {
+      transform: translateX(-28px);
+    }
+
+    .reveal--left.is-visible {
+      transform: translateX(0);
+    }
+
+    .hero__content.reveal {
+      transition:
+        opacity 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+        transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .reveal--right {
+      transform: translateX(28px);
+    }
+
+    .reveal--right.is-visible {
+      transform: translateX(0);
+    }
+
+    .reveal--scale {
+      transform: scale(0.96);
+    }
+
+    .reveal--scale.is-visible {
+      transform: scale(1);
+    }
+
+    .hero__banner {
+      animation: bannerSlide 1.35s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    @keyframes bannerSlide {
+      from {
+        opacity: 0;
+        transform: translateY(-100%);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .hero__info-chip {
+      animation: chipPop 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    .hero__infos .hero__info-chip:nth-child(1) { animation-delay: 0.12s; }
+    .hero__infos .hero__info-chip:nth-child(2) { animation-delay: 0.2s; }
+
+    @keyframes chipPop {
+      from {
+        opacity: 0;
+        transform: translateY(10px) scale(0.92);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .hero__proof {
+      animation: proofIn 1.1s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    .hero__proof:nth-child(1) { animation-delay: 0.85s; }
+    .hero__proof:nth-child(2) { animation-delay: 1.1s; }
+    .hero__proof:nth-child(3) { animation-delay: 1.35s; }
+
+    @keyframes proofIn {
+      from {
+        opacity: 0;
+        transform: translateX(16px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .hero__accent {
+      animation: accentPulse 1.2s cubic-bezier(0.22, 1, 0.36, 1) 1.5s both;
+    }
+
+    @keyframes accentPulse {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .cta-btn {
+      animation: ctaBreath 5.8s ease-in-out infinite;
+    }
+
+    @keyframes ctaBreath {
+      0%, 100% {
+        box-shadow:
+          0 4px 20px rgba(164, 14, 33, 0.28),
+          inset 0 1px 0 rgba(255, 255, 255, 0.15);
+        transform: translateY(0);
+      }
+      50% {
+        box-shadow:
+          0 8px 28px rgba(164, 14, 33, 0.42),
+          inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        transform: translateY(-2px);
+      }
+    }
+
+    .hero__frame,
+    .expert__photo-wrap {
+      animation: mediaFloat 12s ease-in-out infinite;
+    }
+
+    .expert__photo-wrap {
+      animation-delay: -4s;
+    }
+
+    @keyframes mediaFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+
+    .topics__item {
+      transition: transform 280ms ease;
+    }
+
+    @media (min-width: 900px) {
+      .topics__item:hover {
+        transform: translateX(4px);
+      }
+    }
+
+    .expert__tag {
+      transition: transform 220ms ease, background 220ms ease;
+    }
+
+    .expert__tag:hover {
+      transform: translateY(-2px);
+    }
+
+    .expert__cred {
+      transition: transform 220ms ease, box-shadow 220ms ease;
+    }
+
+    .expert__cred:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .bg-lines__track,
+      .bg-lines__track--alt,
+      .hero__banner,
+      .hero__info-chip,
+      .hero__proof,
+      .hero__accent,
+      .cta-btn,
+      .cta-btn::before,
+      .hero__frame,
+      .expert__photo-wrap,
+      .reveal {
+        animation: none !important;
+        transition: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+      }
+
+      .topics__item:hover,
+      .expert__tag:hover,
+      .expert__cred:hover {
+        transform: none !important;
+      }
+    }
+
+    @media (max-width: 899px) {
+      .container,
+      .container--narrow {
+        width: min(100% - 40px, 350px);
+      }
+
+      .hero__banner {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .hero__banner-inner {
+        max-width: 350px;
+        margin-inline: auto;
+      }
+
+      .hero__grid {
+        padding: 20px 0 64px;
+      }
+
+      .hero__content {
+        text-align: center;
+        max-width: 350px;
+        margin-inline: auto;
+      }
+
+      .hero__logo {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero__infos {
+        justify-content: center;
+        gap: 5px;
+      }
+
+      .hero__info-chip {
+        font-size: 14px;
+        padding: 6px 12px;
+      }
+
+      .hero__headline {
+        font-size: 32px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero__sub {
+        font-size: 19px;
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero__cta-wrap {
+        align-items: center;
+        width: 100%;
+        max-width: 350px;
+        margin-inline: auto;
+      }
+
+      .hero__visual {
+        min-height: 360px;
+        max-height: 480px;
+        max-width: 350px;
+        margin-inline: auto;
+        width: 100%;
+      }
+
+      .hero__accent {
+        top: auto;
+        bottom: 16px;
+        left: 16px;
+        font-size: 11px;
+        padding: 8px 12px;
+        max-width: calc(100% - 140px);
+      }
+
+      .hero__proofs {
+        bottom: 16px;
+        right: 12px;
+        gap: 6px;
+      }
+
+      .hero__proof {
+        max-width: 150px;
+        padding: 6px 10px;
+      }
+
+      .hero__proof-num {
+        font-size: 0.95rem;
+      }
+
+      .hero__proof-label {
+        font-size: 10px;
+      }
+
+      .topics,
+      .expert {
+        padding: 64px 0;
+      }
+
+      .topics__list,
+      .topics__cta,
+      .expert__grid,
+      .expert__content {
+        max-width: 350px;
+        margin-inline: auto;
+      }
+
+      .topics__title {
+        width: 100%;
+        max-width: 350px;
+        margin-inline: auto;
+        position: sticky;
+        top: 0;
+        z-index: 30;
+        margin-bottom: 24px;
+        padding: 16px 24px 18px;
+        background: var(--pc-bg-primary);
+        box-shadow: none;
+      }
+
+      .topics__list {
+        gap: 24px;
+        padding-bottom: 24px;
+      }
+
+      .topics__item {
+        position: sticky;
+        top: 88px;
+        grid-template-columns: 56px 1fr;
+        gap: 12px;
+        padding: 22px 20px;
+        animation: none;
+        box-shadow: none;
+      }
+
+      .topics__item:hover {
+        transform: none;
+      }
+
+      .topics__item:nth-child(1) { z-index: 1; top: 100px; }
+      .topics__item:nth-child(2) { z-index: 2; top: 108px; }
+      .topics__item:nth-child(3) { z-index: 3; top: 116px; }
+      .topics__item:nth-child(4) { z-index: 4; top: 124px; }
+      .topics__item:nth-child(5) { z-index: 5; top: 132px; }
+      .topics__item:nth-child(6) { z-index: 6; top: 140px; }
+      .topics__item:nth-child(7) { z-index: 7; top: 148px; }
+      .topics__item:nth-child(8) { z-index: 8; top: 156px; }
+      .topics__item:nth-child(9) { z-index: 9; top: 164px; }
+      .topics__item:nth-child(10) { z-index: 10; top: 172px; }
+
+      .topics__num {
+        font-size: 2.75rem;
+        line-height: 0.9;
+        padding-top: 0;
+      }
+
+      .topics__cta {
+        position: relative;
+        z-index: 20;
+        margin-top: 40px;
+      }
+
+      .cta-btn {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .cta-btn__text {
+        align-items: center;
+        text-align: center;
+      }
+
+      .modal__dialog {
+        width: min(100%, 350px);
+      }
+
+      .modal__title {
+        font-size: 28px;
+      }
+
+      .modal__subtitle {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg-lines" aria-hidden="true">
+    <div class="bg-lines__track"></div>
+    <div class="bg-lines__track bg-lines__track--alt"></div>
+  </div>
+
+  <!-- DOBRA 1 — HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero__banner">
+      <p class="hero__banner-inner">
+        Exclusivo para mulheres que <strong>querem voltar a se sentir desejadas</strong>, e já cansaram de se apagar por todo mundo
+      </p>
+    </div>
+
+    <div class="container hero__grid">
+      <div class="hero__content reveal reveal--left">
+        <picture>
+          <source srcset="assets/logo-bordo.avif" type="image/avif">
+          <source srcset="assets/logo-bordo.webp" type="image/webp">
+          <img
+            class="hero__logo"
+            src="assets/logo-bordo-opt.png"
+            alt="Papo Calcinha com Rita Rostirolla"
+            width="560"
+            height="303"
+            decoding="async"
+          >
+        </picture>
+
+        <div class="hero__infos">
+          <span class="hero__info-chip">Toda terça · 20h</span>
+          <span class="hero__info-chip">100% gratuito e online</span>
+        </div>
+
+        <h1 class="hero__headline">
+          Voltar a se sentir uma mulher confiante começa com uma conversa honesta.
+        </h1>
+
+        <p class="hero__sub">
+          Um papo íntimo, toda terça, só entre nós, pra falarmos de
+          <strong>relacionamento, desejo sexual, menopausa, autoestima</strong>
+          e tudo o que a gente evita dizer em voz alta. Com classe, sem tabu e sem plateia.
+        </p>
+
+        <div class="hero__cta-wrap">
+          <button class="cta-btn" type="button" data-open-modal>
+            <span class="cta-btn__text">
+              <span class="cta-btn__label">Quero entrar</span>
+              <span class="cta-btn__title">Papo Calcinha</span>
+            </span>
+            <span class="cta-btn__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="hero__visual reveal reveal--right">
+        <div class="hero__frame">
+          <picture>
+            <source srcset="assets/rita-hero.avif" type="image/avif">
+            <source srcset="assets/rita-hero.webp" type="image/webp">
+            <img
+              class="hero__photo"
+              src="assets/rita-hero.webp"
+              alt="Rita Rostirolla"
+              width="1120"
+              height="1360"
+              fetchpriority="high"
+              decoding="async"
+            >
+          </picture>
+          <div class="hero__proofs">
+            <div class="hero__proof">
+              <span class="hero__proof-num">+30 anos</span>
+              <span class="hero__proof-label">Sexóloga e terapeuta sexual</span>
+            </div>
+            <div class="hero__proof">
+              <span class="hero__proof-num">+800 mil</span>
+              <span class="hero__proof-label">Mulheres no presencial</span>
+            </div>
+            <div class="hero__proof">
+              <span class="hero__proof-num">Desde 1996</span>
+              <span class="hero__proof-label">Mentora de mulheres</span>
+            </div>
+          </div>
+          <span class="hero__accent">Toda terça · 20h · Zoom</span>
+          <span class="hero__corner" aria-hidden="true"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOBRA 2 — TÓPICOS -->
+  <section class="topics" id="topicos">
+    <div class="container--narrow">
+      <h2 class="topics__title reveal">O que conversamos no Papo Calcinha:</h2>
+
+      <ol class="topics__list">
+        <li class="topics__item reveal">
+          <span class="topics__num" aria-hidden="true">1</span>
+          <p class="topics__text"><strong>Como voltar a sentir desejo</strong> sem achar que "já passou da idade" ou que menopausa é sentença</p>
+        </li>
+        <li class="topics__item reveal">
+          <span class="topics__num" aria-hidden="true">2</span>
+          <p class="topics__text"><strong>Por que ele some, te deixa de contatinho ou nunca te prioriza</strong> — e o que uma mulher madura faz diferente (sem joguinho e sem se rebaixar)</p>
+        </li>
+        <li class="topics__item reveal">
+          <span class="topics__num" aria-hidden="true">3</span>
+          <p class="topics__text"><strong>O que está matando a intimidade no casamento</strong> — e como reconectar com dignidade (sem implorar atenção)</p>
+        </li>
+        <li class="topics__item reveal">
+          <span class="topics__num" aria-hidden="true">4</span>
+          <p class="topics__text"><strong>Por que tanta mulher se apaga</strong> pra cuidar de marido, filho e trabalho… e como se recolocar no centro da própria vida</p>
+        </li>
+        <li class="topics__item reveal">
+          <span class="topics__num" aria-hidden="true">5</span>
+          <p class="topics__text"><strong>A verdade sobre sexo depois dos 40</strong> que a internet distorce — e o que 30 anos de consultório realmente ensinam (com classe)</p>
+        </li>
+        <li class="topics__item reveal">
+          <span class="topics__num" aria-hidden="true">6</span>
+          <p class="topics__text"><strong>Como se sentir feminina, desejada e elegante de novo</strong> sem precisar "parecer jovem" nem virar personagem</p>
+        </li>
+        <li class="topics__item reveal">
+          <span class="topics__num" aria-hidden="true">7</span>
+          <p class="topics__text"><strong>O papo que a tua mãe não teve com você</strong> — desejo, limites, prazer, recomeço e escolhas conscientes</p>
+        </li>
+      </ol>
+
+      <div class="topics__cta reveal">
+        <button class="cta-btn" type="button" data-open-modal>
+          <span class="cta-btn__text">
+            <span class="cta-btn__label">Quero entrar</span>
+            <span class="cta-btn__title">Papo Calcinha</span>
+          </span>
+          <span class="cta-btn__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOBRA 3 — EXPERT -->
+  <section class="expert" id="rita">
+    <div class="container">
+      <div class="expert__grid">
+        <div class="expert__photo-wrap reveal reveal--scale">
+          <picture>
+            <source srcset="assets/rita-expert.avif" type="image/avif">
+            <source srcset="assets/rita-expert.webp" type="image/webp">
+            <img
+              class="expert__photo"
+              src="assets/rita-expert.webp"
+              alt="Rita Rostirolla — sexóloga e mentora de mulheres"
+              width="1000"
+              height="1250"
+              loading="lazy"
+              decoding="async"
+            >
+          </picture>
+        </div>
+
+        <div class="expert__content reveal reveal--right">
+          <h2 class="expert__title">Quem é Rita Rostirolla</h2>
+
+          <div class="expert__tags">
+            <span class="expert__tag">Relacionamento</span>
+            <span class="expert__tag">Sexualidade</span>
+            <span class="expert__tag">Autoestima</span>
+            <span class="expert__tag">Menopausa</span>
+            <span class="expert__tag">Recomeço</span>
+          </div>
+
+          <div class="expert__bio">
+            <p><strong>Rita Rostirolla</strong> é sexóloga, terapeuta sexual, palestrante e mentora de mulheres há 30 anos. Começou em 1996, e no presencial já falou pra mais de 800 mil mulheres.</p>
+            <p>O objetivo dela nunca foi falar só de sexo. Ela fala de mulher, de vida, de relacionamentos saudáveis e de uma feminilidade forte, elegante e consistente.</p>
+            <p>Aos 61 anos, avó, na mesma fase de muita aluna, Rita ensina o que a mãe de muita gente não ensinou: desejo com classe, limites com maturidade, prazer sem culpa e recomeço sem vergonha.</p>
+            <p>Toda terça, às 20h, ela abre o Zoom pra um encontro intimista: o <strong>Papo Calcinha</strong>.</p>
+          </div>
+
+          <div class="expert__credentials">
+            <div class="expert__cred">
+              <p class="expert__cred-num">+30 anos</p>
+              <p class="expert__cred-label">Sexóloga e terapeuta sexual desde 1996</p>
+            </div>
+            <div class="expert__cred">
+              <p class="expert__cred-num">+800 mil</p>
+              <p class="expert__cred-label">Mulheres no presencial</p>
+            </div>
+          </div>
+
+          <button class="cta-btn" type="button" data-open-modal>
+            <span class="cta-btn__text">
+              <span class="cta-btn__label">Quero entrar</span>
+              <span class="cta-btn__title">Papo Calcinha</span>
+            </span>
+            <span class="cta-btn__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POPUP — FORMULÁRIO -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal__backdrop" data-close-modal></div>
+
+    <div class="modal__dialog">
+      <button class="modal__close" type="button" data-close-modal aria-label="Fechar">&times;</button>
+
+      <h2 class="modal__title" id="modal-title">Entre no Grupo Íntimo Papo Calcinha</h2>
+      <p class="modal__subtitle">Preencha abaixo e entre no grupo de WhatsApp.</p>
+
+      <form id="form-captura" novalidate>
+        <div class="form__group">
+          <label class="form__label" for="nome">Nome</label>
+          <div class="form__control" data-field="nome">
+            <span class="form__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" width="18" height="18">
+                <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.6"/>
+                <path d="M4 20c0-3.5 3.6-6 8-6s8 2.5 8 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <input class="form__input" type="text" id="nome" name="nome" placeholder="Seu nome completo" autocomplete="name" required>
+          </div>
+          <p class="form__error" id="error-nome">Por favor, informe seu nome.</p>
+        </div>
+
+        <div class="form__group">
+          <label class="form__label" for="email">E-mail</label>
+          <div class="form__control" data-field="email">
+            <span class="form__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" width="18" height="18">
+                <rect x="3" y="5" width="18" height="14" rx="2.5" stroke="currentColor" stroke-width="1.6"/>
+                <path d="M3 8l9 6 9-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <input class="form__input" type="email" id="email" name="email" placeholder="Seu melhor e-mail" autocomplete="email" required>
+          </div>
+          <p class="form__error" id="error-email">Por favor, informe um e-mail válido.</p>
+        </div>
+
+        <div class="form__group">
+          <label class="form__label" for="whatsapp">WhatsApp</label>
+          <div class="form__control" data-field="whatsapp">
+            <span class="form__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" width="18" height="18">
+                <path d="M7 3h4l1.5 4-2.5 1.5a11 11 0 0 0 5.5 5.5L17 11.5 21 13v4a2 2 0 0 1-2.2 2A16 16 0 0 1 3 5.2 2 2 0 0 1 5 3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span class="form__prefix" aria-hidden="true">+55</span>
+            <input
+              class="form__input form__input--whatsapp"
+              type="tel"
+              id="whatsapp"
+              name="whatsapp"
+              placeholder="(DDD) 99999-9999"
+              inputmode="numeric"
+              autocomplete="tel-national"
+              required
+            >
+          </div>
+          <p class="form__error" id="error-whatsapp">Informe um WhatsApp válido com DDD e 9 dígitos.</p>
+        </div>
+
+        <div class="form__submit">
+          <button class="cta-btn cta-btn--full" type="submit">
+            <span class="cta-btn__text">
+              <span class="cta-btn__label">Entrar</span>
+              <span class="cta-btn__title">no grupo agora</span>
+            </span>
+            <span class="cta-btn__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // ⚠️ Substituir pelos valores reais
+    const WHATSAPP_GROUP_URL = 'https://link.ritarostirolla.com/papo-calcinha-wpp';
+    const FORM_ENDPOINT = 'https://n8n.plusstech.com.br/webhook/rr-live-semanal-lead';
+
+    const UTM_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+    const UTM_STORAGE_KEY = 'pc_utms';
+
+    const modal = document.getElementById('modal');
+    const form = document.getElementById('form-captura');
+    const openButtons = document.querySelectorAll('[data-open-modal]');
+    const closeButtons = document.querySelectorAll('[data-close-modal]');
+    const whatsappInput = document.getElementById('whatsapp');
+    let lastFocus = null;
+
+    function openModal() {
+      lastFocus = document.activeElement;
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      document.getElementById('nome').focus();
+    }
+
+    function closeModal() {
+      modal.classList.remove('is-open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      if (lastFocus) lastFocus.focus();
+    }
+
+    openButtons.forEach(btn => btn.addEventListener('click', openModal));
+    closeButtons.forEach(btn => btn.addEventListener('click', closeModal));
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+    });
+
+    /* ── UTMs ── */
+    function captureUtms() {
+      const params = new URLSearchParams(window.location.search);
+      let stored = {};
+      try {
+        stored = JSON.parse(sessionStorage.getItem(UTM_STORAGE_KEY) || '{}');
+      } catch (_) {
+        stored = {};
+      }
+
+      const utms = {};
+      UTM_KEYS.forEach(key => {
+        const fromUrl = params.get(key);
+        if (fromUrl) {
+          utms[key] = fromUrl;
+        } else if (stored[key]) {
+          utms[key] = stored[key];
+        } else {
+          utms[key] = '';
+        }
+      });
+
+      sessionStorage.setItem(UTM_STORAGE_KEY, JSON.stringify(utms));
+      return utms;
+    }
+
+    captureUtms();
+
+    /* ── WhatsApp: normalização + máscara ── */
+    function normalizeWhatsappLocal(raw) {
+      let digits = String(raw || '').replace(/\D/g, '');
+
+      if (digits.startsWith('55') && digits.length > 11) {
+        digits = digits.slice(2);
+      }
+
+      if (digits.startsWith('0')) {
+        digits = digits.replace(/^0+/, '');
+      }
+
+      if (digits.length > 2 && digits[2] !== '9') {
+        digits = digits.slice(0, 2) + '9' + digits.slice(2);
+      }
+
+      return digits.slice(0, 11);
+    }
+
+    function formatWhatsappMask(digits) {
+      if (!digits) return '';
+      if (digits.length <= 2) return `(${digits}`;
+      if (digits.length <= 7) return `(${digits.slice(0, 2)}) ${digits.slice(2)}`;
+      return `(${digits.slice(0, 2)}) ${digits.slice(2, 7)}-${digits.slice(7)}`;
+    }
+
+    function isValidWhatsappLocal(digits) {
+      return digits.length === 11 && digits[2] === '9';
+    }
+
+    whatsappInput.addEventListener('input', e => {
+      const local = normalizeWhatsappLocal(e.target.value);
+      e.target.value = formatWhatsappMask(local);
+    });
+
+    /* ── Data America/Sao_Paulo ── */
+    function formatSaoPauloDateTime(date = new Date()) {
+      const parts = new Intl.DateTimeFormat('en-GB', {
+        timeZone: 'America/Sao_Paulo',
+        day: '2-digit',
+        month: '2-digit',
+        year: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: false,
+      }).formatToParts(date);
+
+      const get = type => parts.find(p => p.type === type)?.value || '';
+      return `${get('day')}/${get('month')}/${get('year')} ${get('hour')}:${get('minute')}`;
+    }
+
+    function showError(fieldId, show) {
+      const control = document.querySelector(`.form__control[data-field="${fieldId}"]`);
+      const error = document.getElementById(`error-${fieldId}`);
+      if (control) control.classList.toggle('is-error', show);
+      if (error) error.classList.toggle('is-visible', show);
+    }
+
+    function validateEmail(email) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
+    function buildPayload() {
+      const nome = document.getElementById('nome').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const local = normalizeWhatsappLocal(whatsappInput.value);
+      const utms = captureUtms();
+
+      return {
+        nome,
+        email,
+        whatsapp: '55' + local,
+        data: formatSaoPauloDateTime(),
+        utm_source: utms.utm_source || '',
+        utm_medium: utms.utm_medium || '',
+        utm_campaign: utms.utm_campaign || '',
+        utm_Campaign: utms.utm_campaign || '',
+        utm_content: utms.utm_content || '',
+        utm_term: utms.utm_term || '',
+        page_url: window.location.href,
+        page_slug: window.location.pathname,
+        page_link: window.location.href,
+      };
+    }
+
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+
+      const nome = document.getElementById('nome').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const local = normalizeWhatsappLocal(whatsappInput.value);
+
+      let valid = true;
+
+      showError('nome', !nome);
+      if (!nome) valid = false;
+
+      showError('email', !validateEmail(email));
+      if (!validateEmail(email)) valid = false;
+
+      showError('whatsapp', !isValidWhatsappLocal(local));
+      if (!isValidWhatsappLocal(local)) valid = false;
+
+      if (!valid) return;
+
+      const payload = buildPayload();
+
+      if (FORM_ENDPOINT) {
+        try {
+          await fetch(FORM_ENDPOINT, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload),
+          });
+        } catch (err) {
+          console.error('Erro ao enviar lead:', err);
+        }
+      } else {
+        console.log('Lead payload:', payload);
+      }
+
+      window.location.href = WHATSAPP_GROUP_URL;
+    });
+
+    /* ── Reveal on scroll ── */
+    const revealEls = document.querySelectorAll('.reveal');
+    if (revealEls.length) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+          if (!entry.isIntersecting) return;
+          const el = entry.target;
+          const siblings = el.parentElement
+            ? [...el.parentElement.querySelectorAll(':scope > .reveal')]
+            : [];
+          const idx = siblings.indexOf(el);
+          const delay = idx >= 0 ? idx * 130 : 0;
+          el.style.transitionDelay = `${delay}ms`;
+          el.classList.add('is-visible');
+          io.unobserve(el);
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+
+      revealEls.forEach(el => io.observe(el));
+
+      // acima da dobra: revelar já no load
+      requestAnimationFrame(() => {
+        document.querySelectorAll('.hero .reveal').forEach(el => {
+          el.classList.add('is-visible');
+        });
+      });
+    }
+  </script>
+</body>
+</html>

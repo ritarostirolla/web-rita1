@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="0; url=https://ritarostirolla.com/">
+  <link rel="canonical" href="https://ritarostirolla.com/">
+  <script>
+    location.replace('https://ritarostirolla.com/');
+  </script>
+  <title>As 7 Chaves do Desejo — Rita Rostirolla</title>
+  <meta name="description" content="Desperte o desejo do teu homem em até 7 dias, e faça ele voltar a te olhar, te querer e te procurar. As 7 Chaves do Desejo: De R$47 por R$9,90.">
+  <meta name="theme-color" content="#6E2438">
+
+  <!-- Pixel Meta PRIMEIRO (connect rate). Não adiar. -->
+  <script>
+    window.SETE_CHAVES_META_PIXEL_ID = '27876642855305865';
+    window.SETE_CHAVES_GTM_ID = '';
+  </script>
+  <script>
+    (function () {
+      var gtm = window.SETE_CHAVES_GTM_ID;
+      var pixel = window.SETE_CHAVES_META_PIXEL_ID;
+      if (gtm) {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtm.js?id=' + encodeURIComponent(gtm);
+        document.head.appendChild(s);
+      } else if (pixel) {
+        !function (f, b, e, v, n, t, s) {
+          if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+          };
+          if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+          n.queue = []; t = b.createElement(e); t.async = !0;
+          t.src = v; s = b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t, s);
+        }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', pixel);
+        fbq('track', 'PageView');
+      }
+    })();
+  </script>
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <!-- Só preload do LCP. Fonte sem preload: não disputa banda com a dobra 1. -->
+  <link rel="preload" as="image" href="assets/dobra1.avif" type="image/avif" fetchpriority="high">
+
+  <style>
+    /* Fallback métrico ≈ Source Sans 3 (reduz CLS do swap) */
+    @font-face {
+      font-family: 'Source Sans 3 Fallback';
+      src: local('Arial'), local('Helvetica Neue'), local('Helvetica');
+      size-adjust: 111.69%;
+      ascent-override: 91.68%;
+      descent-override: 35.81%;
+      line-gap-override: 0%;
+    }
+    @font-face {
+      font-family: 'Source Sans 3';
+      src: url('fonts/SourceSans3-latin.woff2') format('woff2');
+      font-weight: 200 900;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    :root {
+      /* Fundos */
+      --c7-bg-primary:    #FBF6F2;
+      --c7-bg-secondary:  #F6ECE4;
+      --c7-bg-elevated:   #FFFFFF;
+      --c7-bg-intimate:   #1C1014;
+
+      /* Marca */
+      --c7-brand:         #6E2438;
+      --c7-deep:          #451523;
+      --c7-gold:          #C9A24B;
+      --c7-champagne:     #F3E2C8;
+      --c7-blush:         #E9C6CE;
+
+      /* Texto */
+      --c7-text-primary:  #2B2124;
+      --c7-text-secondary:#6E5F58;
+      --c7-text-muted:    #9B8D85;
+      --c7-text-inverse:  #FBF6F2;
+
+      /* CTA — verde */
+      --c7-cta-a:         #3DDC8A;
+      --c7-cta-mid:       #22B86A;
+      --c7-cta-b:         #0F7A45;
+      --c7-cta-text:      #FFFFFF;
+
+      /* Preço */
+      --c7-de-dark:       #FF8F8F;
+      --c7-por-dark:      #7EE8A2;
+      --c7-de-light:      #C25E5E;
+      --c7-por-light:     #1F9D55;
+
+      /* Layout */
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 20px;
+      --radius-pill: 999px;
+      --shadow-sm: 0 2px 12px rgba(43, 33, 36, 0.06);
+      --shadow-md: 0 8px 32px rgba(43, 33, 36, 0.12);
+      --shadow-lg: 0 16px 48px rgba(28, 16, 20, 0.28);
+      --font-body: 'Source Sans 3', 'Source Sans 3 Fallback', system-ui, sans-serif;
+      --font-title: 'Source Sans 3', 'Source Sans 3 Fallback', system-ui, sans-serif;
+      --max-width: 1120px;
+      --max-text: 720px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      font-size: 17px;
+      line-height: 1.65;
+      color: var(--c7-text-primary);
+      background: var(--c7-bg-primary);
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; }
+
+    .container { width: min(100% - 40px, var(--max-width)); margin-inline: auto; }
+    .container--narrow { width: min(100% - 40px, var(--max-text)); margin-inline: auto; }
+
+    /* ============ [0] Urgência ============ */
+    .urgency {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+      padding: 12px 20px;
+      background: linear-gradient(90deg, #C4122E 0%, #E01837 45%, #A50E24 100%);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+      box-shadow: 0 4px 20px rgba(196, 18, 46, 0.55);
+      color: var(--c7-text-inverse);
+      font-size: clamp(14px, 1.6vw, 18px);
+      font-weight: 500;
+      text-align: center;
+    }
+    .urgency__de { color: #F0B9B9; text-decoration: line-through; font-weight: 700; }
+    .urgency__por { color: #9EF0BC; font-weight: 700; }
+    .urgency__timer {
+      color: var(--c7-champagne);
+      font-variant-numeric: tabular-nums;
+      font-weight: 700;
+      display: inline-block;
+      min-width: 8ch;
+      text-align: left;
+    }
+    .urgency #urgency-date {
+      display: inline-block;
+      min-width: 11ch;
+      text-align: left;
+    }
+    .urgency strong { color: #fff; }
+    @media (max-width: 899px) {
+      .urgency { flex-direction: column; padding: 10px 16px; font-size: 15px; line-height: 1.35; }
+      .urgency__sep { display: none; }
+    }
+
+    /* ============ [1] Hero ============ */
+    .hero {
+      position: relative;
+      background: var(--c7-bg-intimate);
+      color: var(--c7-text-inverse);
+      overflow: hidden;
+    }
+    .hero::before,
+    .hero::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      pointer-events: none;
+    }
+    .hero::before {
+      width: 480px; height: 480px;
+      background: rgba(201, 162, 75, 0.14);
+      top: -140px; right: -80px;
+    }
+    .hero::after {
+      width: 420px; height: 420px;
+      background: rgba(110, 36, 56, 0.42);
+      bottom: -160px; left: -100px;
+    }
+    .hero__grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 28px 0 64px;
+    }
+    @media (min-width: 900px) {
+      .hero__grid { grid-template-columns: 1.05fr 0.95fr; gap: 64px; align-items: center; padding: 56px 0 80px; }
+    }
+    .hero__content { max-width: 350px; margin-inline: auto; text-align: center; }
+    @media (min-width: 900px) {
+      .hero__content { max-width: 600px; margin-inline: 0; text-align: left; }
+    }
+    .hero__logo {
+      width: 150px;
+      height: auto;
+      aspect-ratio: 400 / 314;
+      margin-inline: auto;
+      margin-bottom: 18px;
+      display: block;
+    }
+    @media (min-width: 900px) { .hero__logo { margin-inline: 0; width: 150px; } }
+    .hero__headline {
+      font-family: var(--font-title);
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+      color: #fff;
+    }
+    @media (min-width: 900px) { .hero__headline { font-size: 35px; max-width: 600px; } }
+    .hero__headline em { font-style: normal; color: var(--c7-champagne); }
+    .hero__sub {
+      font-size: clamp(1.05rem, 1.4vw, 1.15rem);
+      line-height: 1.55;
+      color: rgba(251, 246, 242, 0.82);
+      max-width: 450px;
+      margin-bottom: 20px;
+    }
+    .hero__sub strong { color: #fff; font-weight: 600; }
+    .price-box {
+      display: inline-block;
+      background: rgba(243, 226, 200, 0.10);
+      border: 1px solid rgba(243, 226, 200, 0.25);
+      border-radius: var(--radius-md);
+      padding: 8px 18px;
+      margin-bottom: 20px;
+      font-size: 1.05rem;
+      max-width: 420px;
+    }
+    .price-box__de { color: var(--c7-de-dark); text-decoration: line-through; font-weight: 700; }
+    .price-box__por { color: var(--c7-por-dark); font-size: 54px; font-weight: 800; line-height: 1; display: inline-block; vertical-align: middle; margin-left: 6px; }
+    @media (max-width: 899px) { .price-box { max-width: 350px; } .price-box__por { font-size: 44px; } }
+
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      min-height: 64px;
+      padding: 14px 28px 14px 32px;
+      background: linear-gradient(145deg, var(--c7-cta-a) 0%, var(--c7-cta-mid) 48%, var(--c7-cta-b) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      border-radius: var(--radius-lg);
+      color: var(--c7-cta-text);
+      text-decoration: none;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+      box-shadow:
+        0 8px 24px rgba(15, 122, 69, 0.38),
+        0 2px 0 rgba(255, 255, 255, 0.22) inset;
+    }
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.05);
+      box-shadow:
+        0 14px 36px rgba(15, 122, 69, 0.48),
+        0 2px 0 rgba(255, 255, 255, 0.28) inset;
+    }
+    .cta-btn::after {
+      content: '';
+      position: absolute;
+      top: 0; left: -60%;
+      width: 40%; height: 100%;
+      background: linear-gradient(115deg, transparent, rgba(255, 255, 255, 0.32), transparent);
+      animation: ctaShine 2.6s infinite;
+    }
+    @keyframes ctaShine { 0% { left: -60%; } 60% { left: 120%; } 100% { left: 120%; } }
+    .cta-btn__text { display: flex; flex-direction: column; align-items: flex-start; text-align: left; }
+    .cta-btn__label { font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.85; }
+    .cta-btn__title { font-size: 1.5rem; font-weight: 700; line-height: 1.15; }
+    .cta-btn__icon { width: 28px; height: 28px; flex: none; }
+    .cta-btn__icon svg { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    @media (max-width: 899px) {
+      .cta-btn { width: 100%; }
+      .cta-btn__text { align-items: center; text-align: center; }
+      .cta-btn__label {
+        white-space: nowrap;
+        font-size: 10px;
+        letter-spacing: 0.06em;
+      }
+      .cta-btn__title { font-size: 1.05rem; white-space: nowrap; }
+    }
+
+    .hero__visual { display: flex; justify-content: center; }
+    .mockup {
+      position: relative;
+      max-width: 380px;
+      width: 100%;
+    }
+    .mockup img {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(243, 226, 200, 0.35);
+      box-shadow: var(--shadow-lg);
+    }
+    .expert__tag {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      background: rgba(251, 246, 242, 0.10);
+      border: 1px solid rgba(243, 226, 200, 0.35);
+      backdrop-filter: blur(6px);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--c7-champagne);
+    }
+
+    /* ============ Marquee ============ */
+    .marquee {
+      background: var(--c7-bg-secondary);
+      border-block: 1px solid var(--c7-blush);
+      overflow: hidden;
+      padding: 12px 0;
+    }
+    .marquee__track {
+      display: inline-flex;
+      gap: 0;
+      white-space: nowrap;
+      animation: marquee 28s linear infinite;
+    }
+    .marquee__track span {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--c7-deep);
+    }
+    .marquee__track span::after { content: '·'; margin: 0 18px; color: var(--c7-gold); }
+    @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+    /* ============ Seções ============ */
+    .section { padding: 96px 0; }
+    @media (max-width: 899px) { .section { padding: 64px 0; } }
+    .section__title {
+      font-family: var(--font-title);
+      font-size: clamp(1.85rem, 3.4vw, 2.6rem);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--c7-deep);
+      margin-bottom: 16px;
+      max-width: 720px;
+    }
+    @media (min-width: 900px) {
+      .section__title--conteudo { max-width: 430px; }
+    }
+    .section__lead {
+      color: var(--c7-text-secondary);
+      margin-bottom: 40px;
+      max-width: 640px;
+    }
+    .section__lead strong { color: var(--c7-brand); }
+
+    /* ---- Recebe ---- */
+    .recebe-list {
+      display: grid;
+      gap: 16px;
+      max-width: var(--max-text);
+      margin-inline: auto;
+    }
+    .recebe-item {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 16px;
+      align-items: start;
+      padding: 22px 24px;
+      background: var(--c7-bg-elevated);
+      border: 1px solid var(--c7-blush);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-md);
+    }
+    .recebe-item__num {
+      font-family: var(--font-title);
+      font-size: 1.85rem;
+      font-weight: 700;
+      color: var(--c7-gold);
+      line-height: 1;
+    }
+    .recebe-item__title { font-size: 1.15rem; font-weight: 700; color: var(--c7-text-primary); margin-bottom: 4px; }
+    .recebe-item__sub { font-size: 1rem; color: var(--c7-text-secondary); line-height: 1.5; }
+
+    /* ---- Oferta ---- */
+    .section--offer {
+      position: relative;
+      background: var(--c7-bg-intimate);
+      overflow: hidden;
+    }
+    .section--offer::before {
+      content: '';
+      position: absolute;
+      width: 560px; height: 560px;
+      border-radius: 50%;
+      background: rgba(201, 162, 75, 0.10);
+      filter: blur(90px);
+      top: -180px; left: 50%;
+      transform: translateX(-50%);
+      pointer-events: none;
+    }
+    .offer { position: relative; z-index: 1; display: flex; justify-content: center; }
+    .offer__card {
+      width: 100%;
+      max-width: 720px;
+      padding: 36px 28px 32px;
+      background: linear-gradient(165deg, rgba(46, 26, 32, 0.95) 0%, rgba(20, 11, 14, 0.98) 100%);
+      border: 1px solid rgba(243, 226, 200, 0.28);
+      border-radius: 24px;
+      color: var(--c7-text-inverse);
+      text-align: center;
+      box-shadow: var(--shadow-lg);
+    }
+    @media (min-width: 640px) { .offer__card { padding: 44px 40px 36px; } }
+    .offer__logo {
+      width: 150px;
+      height: auto;
+      aspect-ratio: 400 / 314;
+      margin: 0 auto 20px;
+      display: block;
+    }
+    .offer__title {
+      font-family: var(--font-title);
+      font-size: clamp(1.5rem, 2.6vw, 2.1rem);
+      font-weight: 700;
+      line-height: 1.25;
+      color: var(--c7-champagne);
+      max-width: 580px;
+      margin: 0 auto 18px;
+    }
+    @media (max-width: 899px) {
+      .offer__title { max-width: 240px; }
+    }
+    @media (min-width: 900px) {
+      .offer__title { max-width: 495px; }
+    }
+    .offer__title-accent { color: #fff; }
+    .offer__badge {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      padding: 10px 20px;
+      border-radius: var(--radius-pill);
+      background: rgba(251, 246, 242, 0.08);
+      border: 1px solid rgba(243, 226, 200, 0.3);
+      font-size: 14px;
+      margin-bottom: 18px;
+      text-align: center;
+      max-width: 100%;
+    }
+    .offer__badge-line1 {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(251, 246, 242, 0.92);
+      line-height: 1.3;
+    }
+    .offer__badge-dot {
+      width: 8px;
+      height: 8px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      background: var(--c7-por-dark);
+      box-shadow: 0 0 10px rgba(126, 232, 162, 0.7);
+    }
+    .offer__badge-line2 {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--c7-champagne);
+      font-weight: 700;
+      line-height: 1.3;
+    }
+    .offer__badge-line2 strong { color: var(--c7-champagne); font-weight: 700; }
+    .offer__badge-timer { font-variant-numeric: tabular-nums; font-weight: 700; color: var(--c7-champagne); }
+    .offer__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      text-align: left;
+      width: fit-content;
+      max-width: 100%;
+      margin: 0 auto 26px;
+    }
+    .offer__item { display: flex; gap: 10px; align-items: flex-start; }
+    .offer__item-check { color: var(--c7-por-dark); font-weight: 700; flex: none; }
+    .offer__item p { color: rgba(251, 246, 242, 0.88); font-size: 1rem; line-height: 1.45; }
+    .offer__prices {
+      background: var(--c7-bg-primary);
+      color: var(--c7-text-primary);
+      border-radius: var(--radius-md);
+      padding: 14px 20px;
+      max-width: 420px;
+      margin: 0 auto 24px;
+      font-size: 1.05rem;
+    }
+    .offer__de { color: var(--c7-de-light); text-decoration: line-through; font-weight: 700; }
+    .offer__por { color: var(--c7-por-light); font-size: 54px; font-weight: 800; line-height: 1; display: inline-block; vertical-align: middle; margin-left: 6px; }
+    @media (max-width: 639px) { .offer__por { font-size: 44px; } }
+
+    /* ---- Rita ---- */
+    .section--rita { background: linear-gradient(180deg, #FBF6F2 0%, #F6ECE4 55%, #F2E2DA 100%); }
+    .authority {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    @media (min-width: 768px) { .authority { grid-template-columns: 0.85fr 1.15fr; gap: 56px; } }
+    .authority__photo { position: relative; max-width: 440px; margin-inline: auto; }
+    .authority__photo img {
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+    }
+    .authority__photo-tags {
+      position: absolute;
+      right: 12px; bottom: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 6px;
+    }
+    .authority__photo-tags .expert__tag {
+      background: rgba(28, 16, 20, 0.55);
+      border-color: rgba(243, 226, 200, 0.4);
+      color: #fff;
+    }
+    .authority__body { color: var(--c7-text-primary); margin-bottom: 14px; max-width: 60ch; }
+    .authority__body strong { color: var(--c7-brand); }
+    .authority__body em { color: var(--c7-deep); }
+    .authority__stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 24px 0 28px;
+    }
+    .authority__stat {
+      display: flex;
+      flex-direction: column;
+      padding: 12px 18px;
+      background: var(--c7-bg-elevated);
+      border: 1px solid var(--c7-blush);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+    }
+    .authority__stat-num { font-family: var(--font-title); font-size: 1.35rem; font-weight: 700; color: var(--c7-brand); }
+    .authority__stat-label { font-size: 0.85rem; color: var(--c7-text-secondary); }
+
+    /* ---- Footer ---- */
+    .footer {
+      padding: 40px 0 48px;
+      background: var(--c7-bg-intimate);
+      color: rgba(251, 246, 242, 0.7);
+      font-size: 13px;
+      text-align: center;
+    }
+    .footer p { margin-bottom: 6px; }
+    .footer__top { color: var(--c7-champagne); display: inline-block; margin-top: 10px; }
+
+    /* ---- Reveal ---- */
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.is-in { opacity: 1; transform: translateY(0); }
+
+    @media (prefers-reduced-motion: reduce) {
+      .cta-btn::after { animation: none; }
+      .marquee__track { animation: none; }
+      .reveal { opacity: 1; transform: none; transition: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Checkout: colar link Hotmart real (00-links do funil lt-7cd). Vazio = CTAs ficam em #checkout. -->
+  <script>
+    window.SETE_CHAVES_CHECKOUT = 'https://pay.hotmart.com/E107042312O?checkoutMode=10';
+    window.RITA_CHECKOUT = window.SETE_CHAVES_CHECKOUT; // ponte p/ ../js/hotmart-checkout.js
+  </script>
+  <noscript id="c7-gtm-noscript"></noscript>
+  <script>
+    (function () {
+      if (!window.SETE_CHAVES_GTM_ID) return;
+      var ns = document.getElementById('c7-gtm-noscript');
+      if (!ns) return;
+      var iframe = document.createElement('iframe');
+      iframe.src = 'https://www.googletagmanager.com/ns.html?id=' + encodeURIComponent(window.SETE_CHAVES_GTM_ID);
+      iframe.height = 0; iframe.width = 0;
+      iframe.style.display = 'none'; iframe.style.visibility = 'hidden';
+      ns.appendChild(iframe);
+    })();
+  </script>
+
+  <!-- [0] Urgência -->
+  <div class="urgency" role="status">
+    <span class="urgency__line"><strong>Últimas 30 vagas</strong> por esse preço até <strong id="urgency-date">&nbsp;</strong></span>
+  </div>
+
+  <!-- [1] Hero -->
+  <header class="hero" id="inicio">
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <picture>
+          <source srcset="assets/logo-dourada-branca.avif" type="image/avif">
+          <source srcset="assets/logo-dourada-branca.webp" type="image/webp">
+          <img
+            class="hero__logo"
+            src="assets/logo-dourada-branca.webp"
+            alt="As 7 Chaves do Desejo"
+            width="400"
+            height="314"
+            decoding="async"
+          >
+        </picture>
+
+        <h1 class="hero__headline">
+          Desperte o desejo do teu homem em até 7 dias, e faça ele voltar a <em>te olhar, te querer e te procurar</em>, sem implorar atenção e <em>sem virar outra pessoa</em>.
+        </h1>
+
+        <p class="hero__sub">
+          Ele parou de te olhar, o beijo virou selinho, e vocês viraram colegas de casa.
+          <strong>O desejo dele não morreu: é um instinto adormecido, e as chaves estão na tua mão.</strong>
+        </p>
+
+        <div class="price-box">
+          De <span class="price-box__de">R$47</span> por apenas <span class="price-box__por">R$9,90</span>
+        </div>
+
+        <div class="hero__cta-wrap">
+          <a class="cta-btn js-checkout" href="#checkout">
+            <span class="cta-btn__text">
+              <span class="cta-btn__label">Acesso imediato 100% seguro</span>
+              <span class="cta-btn__title">Quero as 7 chaves</span>
+            </span>
+            <span class="cta-btn__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="mockup">
+          <picture>
+            <source srcset="assets/dobra1.avif" type="image/avif">
+            <source srcset="assets/dobra1.webp" type="image/webp">
+            <img
+              src="assets/dobra1.webp"
+              alt="Rita Rostirolla com As 7 Chaves do Desejo"
+              width="900"
+              height="1350"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
+            >
+          </picture>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Marquee -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>O desejo não se implora</span><span>Se desperta</span><span>7 chaves em 7 dias</span><span>Louco por você de novo</span><span>Rita Rostirolla</span>
+      <span>O desejo não se implora</span><span>Se desperta</span><span>7 chaves em 7 dias</span><span>Louco por você de novo</span><span>Rita Rostirolla</span>
+    </div>
+  </div>
+
+  <!-- [2] O que você vai receber -->
+  <section class="section" id="conteudo">
+    <div class="container">
+      <h2 class="section__title section__title--conteudo reveal" style="text-align:center;margin-inline:auto;">O que você vai receber nas 7 Chaves do Desejo</h2>
+      <p class="section__lead reveal" style="text-align:center;margin-inline:auto;max-width:640px;">
+        <strong>É um guia direto passo a passo</strong>, em linguagem de amiga que escuta essa história há 30 anos, com uma chave por dia pra <strong>despertar o instinto do seu homem</strong> que a rotina trancou.
+      </p>
+
+      <div class="recebe-list">
+        <article class="recebe-item reveal">
+          <span class="recebe-item__num">01</span>
+          <div class="recebe-item__body">
+            <h3 class="recebe-item__title">O instinto de desejo masculino</h3>
+            <p class="recebe-item__sub">Por que ele parou de te olhar (e por que não é falta de amor).</p>
+          </div>
+        </article>
+        <article class="recebe-item reveal">
+          <span class="recebe-item__num">02</span>
+          <div class="recebe-item__body">
+            <h3 class="recebe-item__title">Os erros invisíveis</h3>
+            <p class="recebe-item__sub">O que tranca o desejo dele todos os dias, sem você perceber.</p>
+          </div>
+        </article>
+        <article class="recebe-item reveal">
+          <span class="recebe-item__num">03</span>
+          <div class="recebe-item__body">
+            <h3 class="recebe-item__title">As 7 chaves, uma por dia</h3>
+            <p class="recebe-item__sub">Ele volta a te olhar, te querer e te procurar, uma chave por dia.</p>
+          </div>
+        </article>
+        <article class="recebe-item reveal">
+          <span class="recebe-item__num">04</span>
+          <div class="recebe-item__body">
+            <h3 class="recebe-item__title">Missão diária de 10 a 20 minutos</h3>
+            <p class="recebe-item__sub">Passo a passo pronto: você aplica no mesmo dia, sem decorar teoria.</p>
+          </div>
+        </article>
+        <article class="recebe-item reveal">
+          <span class="recebe-item__num">05</span>
+          <div class="recebe-item__body">
+            <h3 class="recebe-item__title">O teste do 7º dia</h3>
+            <p class="recebe-item__sub">Como saber que o instinto dele acordou: o olhar, o elogio, a iniciativa.</p>
+          </div>
+        </article>
+        <article class="recebe-item reveal">
+          <span class="recebe-item__num">06</span>
+          <div class="recebe-item__body">
+            <h3 class="recebe-item__title">O jeito certo de fazer</h3>
+            <p class="recebe-item__sub">Com classe e dignidade: sem implorar, sem se humilhar, sem virar personagem.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- [3] Oferta -->
+  <section class="section section--offer" id="oferta">
+    <div class="container">
+      <div class="offer reveal">
+        <div class="offer__card">
+          <picture>
+            <source srcset="assets/logo-dourada-branca.avif" type="image/avif">
+            <source srcset="assets/logo-dourada-branca.webp" type="image/webp">
+            <img class="offer__logo" src="assets/logo-dourada-branca.webp" alt="As 7 Chaves do Desejo" width="400" height="314" loading="lazy" decoding="async">
+          </picture>
+          <div class="offer__badge" role="status">
+            <span class="offer__badge-line1">
+              <span class="offer__badge-dot" aria-hidden="true"></span>
+              Oferta promocional · encerra hoje
+            </span>
+            <span class="offer__badge-line2">
+              <strong id="offer-date"></strong><span class="offer__badge-timer" id="offer-timer" aria-live="polite"></span>
+            </span>
+          </div>
+          <h2 class="offer__title">Quanto custa ele voltar a te olhar <span class="offer__title-accent">como te olhava no começo?</span></h2>
+          <div class="offer__grid">
+            <div class="offer__item">
+              <span class="offer__item-check" aria-hidden="true">✓</span>
+              <p>As 7 Chaves do Desejo</p>
+            </div>
+            <div class="offer__item">
+              <span class="offer__item-check" aria-hidden="true">✓</span>
+              <p>Desafio de 7 dias (você vai aplicar uma chave por dia)</p>
+            </div>
+            <div class="offer__item">
+              <span class="offer__item-check" aria-hidden="true">✓</span>
+              <p>O teste de confirmação do 7º dia</p>
+            </div>
+            <div class="offer__item">
+              <span class="offer__item-check" aria-hidden="true">✓</span>
+              <p>Acesso imediato após a compra</p>
+            </div>
+          </div>
+          <div class="offer__prices">
+            De <span class="offer__de">R$47</span> por apenas <span class="offer__por">R$9,90</span>
+          </div>
+          <a class="cta-btn js-checkout" href="#checkout">
+            <span class="cta-btn__text">
+              <span class="cta-btn__label">Acesso imediato 100% seguro</span>
+              <span class="cta-btn__title">Quero as 7 chaves</span>
+            </span>
+            <span class="cta-btn__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- [4] Rita -->
+  <section class="section section--rita" id="rita">
+    <div class="container authority">
+      <div class="authority__photo reveal">
+        <picture>
+          <source srcset="assets/rita-hero.avif" type="image/avif">
+          <source srcset="assets/rita-hero.webp" type="image/webp">
+          <img src="assets/rita-hero.webp" alt="Rita Rostirolla" width="640" height="800" loading="lazy">
+        </picture>
+        <div class="authority__photo-tags">
+          <span class="expert__tag">Sexóloga</span>
+          <span class="expert__tag">~30 anos de prática</span>
+          <span class="expert__tag">+800 mil mulheres</span>
+          <span class="expert__tag">Gaúcha</span>
+        </div>
+      </div>
+      <div class="reveal">
+        <h2 class="section__title">Rita Rostirolla</h2>
+        <p class="authority__body">
+          Sexóloga, terapeuta sexual, palestrante e mentora de mulheres há cerca de <strong>30 anos</strong>.
+        </p>
+        <p class="authority__body">
+          Mais de <strong>800 mil mulheres</strong> no presencial. E há décadas eu escuto a mesma frase: <em>"Rita… ele não me olha mais."</em>
+        </p>
+        <p class="authority__body">
+          A resposta honesta: <strong>o desejo dele não morreu.</strong> Ninguém nunca te entregou as chaves.
+        </p>
+        <p class="authority__body">
+          Eu ensino intimidade na ordem certa: autoestima, relacionamento e desejo, <strong>com classe</strong>. Sem truque, sem teatro, sem te transformar em personagem.
+        </p>
+        <p class="authority__body">
+          Nas 7 Chaves do Desejo eu te entrego o que funciona há 30 anos nos meus atendimentos e palestras: o comportamento que desperta o instinto dele, uma chave por dia.
+        </p>
+        <p class="authority__body">
+          Se a tua mãe não te ensinou… <strong>eu te ensino.</strong>
+        </p>
+        <a class="cta-btn js-checkout" href="#checkout">
+          <span class="cta-btn__text">
+            <span class="cta-btn__label">Acesso imediato 100% seguro</span>
+            <span class="cta-btn__title">Quero as 7 chaves</span>
+          </span>
+          <span class="cta-btn__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container--narrow">
+      <p>© Rita Rostirolla · As 7 Chaves do Desejo</p>
+      <a class="footer__top" href="#inicio">Voltar ao topo</a>
+    </div>
+  </footer>
+
+  <script src="../js/hotmart-checkout.js" defer></script>
+  <script>
+    (function () {
+      // Faixa superior: só a data (sem horário). Oferta (dobra 3): mantém data + timer 23:59.
+      var dateEl = document.getElementById('urgency-date');
+      var offerTimerEl = document.getElementById('offer-timer');
+      var offerDateEl = document.getElementById('offer-date');
+      var TZ = 'America/Sao_Paulo';
+      var MESES = [
+        'janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho',
+        'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'
+      ];
+
+      function brasiliaParts(date) {
+        var dtf = new Intl.DateTimeFormat('en-GB', {
+          timeZone: TZ,
+          year: 'numeric',
+          month: '2-digit',
+          day: '2-digit',
+          hour: '2-digit',
+          minute: '2-digit',
+          second: '2-digit',
+          hour12: false
+        });
+        var map = {};
+        dtf.formatToParts(date).forEach(function (p) {
+          if (p.type !== 'literal') map[p.type] = p.value;
+        });
+        var hour = Number(map.hour);
+        if (hour === 24) hour = 0;
+        return {
+          year: Number(map.year),
+          month: Number(map.month),
+          day: Number(map.day),
+          hour: hour,
+          minute: Number(map.minute),
+          second: Number(map.second)
+        };
+      }
+
+      function dataHojeBrasilia() {
+        var p = brasiliaParts(new Date());
+        return p.day + ' de ' + MESES[p.month - 1];
+      }
+
+      function msUntil2359Brasilia() {
+        var p = brasiliaParts(new Date());
+        var nowSec = p.hour * 3600 + p.minute * 60 + p.second;
+        var endSec = 23 * 3600 + 59 * 60;
+        return Math.max(0, (endSec - nowSec) * 1000);
+      }
+
+      function tick() {
+        var data = dataHojeBrasilia();
+        if (dateEl) dateEl.textContent = data;
+
+        var d = msUntil2359Brasilia();
+        var h = Math.floor(d / 3600000);
+        var m = Math.floor((d % 3600000) / 60000);
+        var s = Math.floor((d % 60000) / 1000);
+        var timerText = ' ' +
+          String(h).padStart(2, '0') + ':' +
+          String(m).padStart(2, '0') + ':' +
+          String(s).padStart(2, '0');
+        if (offerDateEl) offerDateEl.textContent = data;
+        if (offerTimerEl) offerTimerEl.textContent = timerText;
+      }
+      tick();
+      setInterval(tick, 1000);
+
+      // Reveal on scroll
+      var nodes = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) {
+              e.target.classList.add('is-in');
+              io.unobserve(e.target);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+        nodes.forEach(function (n) { io.observe(n); });
+      } else {
+        nodes.forEach(function (n) { n.classList.add('is-in'); });
+      }
+    })();
+  </script>
+</body>
+</html>

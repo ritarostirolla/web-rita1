@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia Sem Pausa | Acesso · Rita Rostirolla</title>
+  <meta name="description" content="Como continuar tendo prazer (e desejo) na menopausa, sem terror e com classe. Guia passo a passo de Rita Rostirolla.">
+  <meta name="theme-color" content="#D4789A">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/guia.css">
+</head>
+<body>
+  <nav class="topnav no-print" aria-label="Navegação do guia">
+    <a class="topnav__brand" href="#capa">
+      <picture>
+        <source srcset="assets/logo-branca.avif" type="image/avif">
+        <source srcset="assets/logo-branca.webp" type="image/webp">
+        <img src="assets/logo-branca.webp" alt="" width="120" height="64">
+      </picture>
+      <span>Guia Sem Pausa</span>
+    </a>
+    <div class="topnav__actions">
+      <a class="topnav__btn" href="#sumario">Sumário</a>
+      <button type="button" class="topnav__btn topnav__btn--solid" id="btn-print">Imprimir / PDF</button>
+    </div>
+  </nav>
+  <div class="progress" aria-hidden="true"><div class="progress__bar" id="progress-bar"></div></div>
+
+  <!-- ════════════ CAPA ════════════ -->
+  <header class="cover" id="capa">
+    <div class="cover__inner">
+      <picture>
+        <source srcset="assets/logo-branca.avif" type="image/avif">
+        <source srcset="assets/logo-branca.webp" type="image/webp">
+        <img class="cover__logo" src="assets/logo-branca.webp" alt="Guia Sem Pausa" width="560" height="300">
+      </picture>
+      <p class="cover__eyebrow">Ebook · passo a passo</p>
+      <h1 class="cover__title">Guia <em>Sem Pausa</em></h1>
+      <p class="cover__sub">Como continuar tendo prazer (e desejo) na menopausa, sem terror e com classe.</p>
+
+      <a class="vip-cta" href="https://link.ritarostirolla.com/grupo-vip-intimo" target="_blank" rel="noopener noreferrer">
+        <span class="vip-cta__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+        </span>
+        <span class="vip-cta__body">
+          <span class="vip-cta__label">Grupo VIP de WhatsApp</span>
+          <span class="vip-cta__title">Grupo VIP Íntimo</span>
+          <span class="vip-cta__text">Um espaço exclusivo para receber conteúdos que não saem em outro lugar e ficar por dentro de tudo da Rita Rostirolla.</span>
+          <span class="vip-cta__btn">Entrar no Grupo VIP</span>
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <a class="wa-float no-print" href="https://link.ritarostirolla.com/grupo-vip-intimo" target="_blank" rel="noopener noreferrer" aria-label="Entrar no Grupo VIP Íntimo no WhatsApp">
+    <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <main class="book">
+    <p class="disclaimer" id="disclaimer">
+      <strong>Importante:</strong> este material tem caráter educativo e é baseado em experiência clínica e de vida.
+      Não substitui consulta com médico, ginecologista ou fisioterapeuta pélvica.
+      Se houver dor, sangramento anormal ou escape de xixi, procura um profissional.
+    </p>
+
+    <!-- ════════════ SUMÁRIO ════════════ -->
+    <nav class="toc" id="sumario" aria-label="Sumário">
+      <h2>Sumário</h2>
+      <ol>
+        <li>
+          <a href="#abertura">Abertura
+            <span class="toc__note">O prazer não precisa terminar</span>
+          </a>
+        </li>
+        <li>
+          <a href="#cap-1">Capítulo 1, O prazer não pausa
+            <span class="toc__note">Núcleo: corpo, libido e permissão</span>
+          </a>
+        </li>
+        <li>
+          <a href="#cap-2">Capítulo 2, Por que o desejo bagunçou
+            <span class="toc__note">Fases, hormônio e cansaço</span>
+          </a>
+        </li>
+        <li>
+          <a href="#cap-3">Capítulo 3, Reconstruir desejo
+            <span class="toc__note">Mente, corpo, vínculo e rituais</span>
+          </a>
+        </li>
+        <li>
+          <a href="#cap-4">Capítulo 4, Quando o corpo pede cuidado
+            <span class="toc__note">Ressecamento e próximo passo</span>
+          </a>
+        </li>
+        <li>
+          <a href="#cap-5">Capítulo 5, Ritual Sem Pausa · 7 dias
+            <span class="toc__note">Micro-vitória desta semana</span>
+          </a>
+        </li>
+        <li>
+          <a href="#cap-6">Capítulo 6, Checklist Sem Pausa
+            <span class="toc__note">Imprimível · sexualidade em destaque</span>
+          </a>
+        </li>
+        <li>
+          <a href="#encerramento">Encerramento
+            <span class="toc__note">Segunda adolescência</span>
+          </a>
+        </li>
+      </ol>
+    </nav>
+
+    <!-- ════════════ ABERTURA ════════════ -->
+    <article class="chapter" id="abertura">
+      <span class="chapter__num">Abertura</span>
+      <h2 class="chapter__title">Te venderam uma mentira. Vamos desfazer.</h2>
+      <p class="chapter__lead">Te venderam a ideia de que menopausa = pausa no prazer. Mentira. O desejo pode oscilar. O prazer não precisa terminar.</p>
+
+      <p>Amiga, se tu chegou até aqui, é porque alguma coisa dentro de ti ainda quer. Pode ser um fogo baixo. Pode ser só uma saudade. Pode ser o medo de “secar” e não sentir mais nada, e, ao mesmo tempo, a teimosia linda de quem não aceita que a vida íntima acabou no boleto da idade.</p>
+
+      <p>Eu sou a <strong>Rita Rostirolla</strong>: sexóloga, terapeuta sexual, palestrante e mentora de mulheres há cerca de <strong>30 anos</strong>. Avó. E já na menopausa, falando do que vivo, não só do que li.</p>
+
+      <p>Eu não falo de menopausa de fora. <strong>Eu tô nela.</strong></p>
+
+      <p>Mais de <strong>800 mil mulheres</strong> passaram pelo meu presencial. A pergunta que volta há décadas é quase sempre a mesma: <em>“Rita… acabou pra mim?”</em></p>
+
+      <p>A resposta honesta: <strong>mudou.</strong> A mentira que te venderam: <strong>acabou.</strong></p>
+
+      <div class="callout callout--intimate">
+        <span class="callout__label">O que este guia é</span>
+        <p>Um mapa curto e direto pra <strong>reacender desejo e prazer</strong>, com classe, sem terror e sem pílula mágica. Em linguagem de amiga que já passou (e ainda passa) por isso.</p>
+      </div>
+
+      <div class="callout callout--warn">
+        <span class="callout__label">O que este guia não é</span>
+        <p>Não é tratado médico chato. Não é curso de 40 horas. Não é pornografia barata, nem “técnica de GP”, nem feitiço pra controlar homem. Sexualidade aqui entra com <strong>dignidade</strong>.</p>
+      </div>
+
+      <h3>Como usar em 7 dias</h3>
+      <p>Não leia tudo “pra arquivar”. Lê com o corpo. O foco deste guia é <strong>reacender</strong>, não só “entender hormônio”.</p>
+      <ol>
+        <li><strong>Dia 1, 2:</strong> Capítulos 1 e 2, permissão + contexto (por que bagunçou).</li>
+        <li><strong>Dia 3, 4:</strong> Capítulo 3, mente, corpo, vínculo; escolhe 1 ritual.</li>
+        <li><strong>Dia 5:</strong> Capítulo 4, se o corpo incomoda, anota o próximo passo clínico.</li>
+        <li><strong>Dia 6, 7:</strong> Capítulo 5 (ritual completo) + Checklist do Cap. 6.</li>
+      </ol>
+
+      <p class="muted">Se quiser ir mais fundo depois (lubrificação em profundidade, assoalho pélvico, casal noite a noite), existe o treinamento completo. Aqui, o combinado é claro: <strong>primeiro win íntimo com verdade.</strong></p>
+
+      <div class="page-nav">
+        <span></span>
+        <a href="#cap-1">Capítulo 1 →</a>
+      </div>
+    </article>
+
+    <!-- ════════════ CAP 1 ════════════ -->
+    <article class="chapter" id="cap-1">
+      <span class="chapter__num">Capítulo 01</span>
+      <h2 class="chapter__title">O prazer não pausa</h2>
+      <p class="chapter__lead">Mudanças no corpo: sim. Fim da mulher: não. Libido se constrói, não fica esperando a vontade cair do céu.</p>
+
+      <h3>O que muda (e o que não muda)</h3>
+      <p>Na menopausa e no caminho até ela, o corpo muda o ritmo. Estrogênio oscila. Às vezes o sono some. Às vezes o humor aperta. Às vezes a pele da intimidade fica mais sensível, mais seca, menos “pronta” no piloto automático de antes.</p>
+
+      <p>Isso é real. E ainda assim: <strong>tu não virou outra pessoa sem direito a prazer.</strong></p>
+
+      <p>O que muita gente chama de “acabou a libido” misturam três coisas diferentes:</p>
+      <ul>
+        <li>vontade que oscila (desejo);</li>
+        <li>corpo que pede mais preparo (excitação / conforto);</li>
+        <li>história emocional (culpa, cansaço, casamento no automático, medo de doer).</li>
+      </ul>
+
+      <p>Separar isso já é meio caminho. Porque se tu trata tudo como “fim da linha”, tu desiste. Se tu trata como <strong>manutenção</strong>, tu age.</p>
+
+      <div class="quote">“Mulher não é carro popular que se joga fora. É Ferrari: precisa de manutenção.”</div>
+
+      <h3>Boa notícia (sem teatro científico)</h3>
+      <p>Em linguagem humana, do que a clínica e a vida mostram:</p>
+      <ul>
+        <li>O corpo <strong>ainda responde</strong> a estímulo, a presença, a contexto, a tempo.</li>
+        <li>O <strong>clitóris não “atrofia e some”</strong> porque tu entrou no climatério. Ele continua sendo um centro de prazer, e muitas mulheres descobrem prazer mais consciente depois dos 40, com menos pressa de “provar” e mais verdade.</li>
+        <li>Orgasmo continua possível. O mapa pode mudar. O destino não foi cancelado.</li>
+      </ul>
+
+      <div class="callout callout--sex">
+        <span class="callout__label">Frase pra grudar na geladeira</span>
+        <p><strong>Libido se constrói.</strong> Esperar a vontade “bater sozinha” depois de uma década cuidando de todo mundo, e dormindo mal, é pedir milagre. Desejo responde a ritual, a atenção, a corpo descansado, a mente que se permite lembrar.</p>
+      </div>
+
+      <h3>Exercício íntimo, o que ainda sinto × o que sinto falta</h3>
+      <p>Sem explícito. Sem nota pra ninguém ler. Só verdade tua.</p>
+
+      <div class="exercise">
+        <p class="exercise__title">Lista íntima (10 minutos)</p>
+        <p class="exercise__hint">Escreve com calma. Não precisa ser “bonito”. Precisa ser honesto.</p>
+        <p><strong>1. O que eu ainda sinto</strong> (mesmo que fraco: calor, curiosidade, saudade, tesão de manhã, vontade de beijo, vontade de me olhar no espelho…)</p>
+        <div class="lines">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <p style="margin-top:20px"><strong>2. O que eu sinto falta</strong> (presença, espontaneidade, molhada sem esforço, ele me procurar, eu me procurar, dormir abraçada, gozar sem pressa…)</p>
+        <div class="lines">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <p style="margin-top:20px"><strong>3. Uma frase pra mim</strong> (completa): “Eu ainda mereço prazer porque…”</p>
+        <div class="lines">
+          <div class="line"></div>
+        </div>
+      </div>
+
+      <p>Guarda essa página. No Dia 7 do ritual, tu volta nela.</p>
+
+      <div class="page-nav">
+        <a href="#abertura">← Abertura</a>
+        <a href="#cap-2">Capítulo 2 →</a>
+      </div>
+    </article>
+
+    <!-- ════════════ CAP 2 ════════════ -->
+    <article class="chapter" id="cap-2">
+      <span class="chapter__num">Capítulo 02</span>
+      <h2 class="chapter__title">Por que o desejo bagunçou</h2>
+      <p class="chapter__lead">Pré, climatério e menopausa, só o que explica a libido. Sem manual médico de 80 páginas.</p>
+
+      <h3>Três nomes, um fio: o desejo</h3>
+      <p>Não vou te enterrar em nomenclatura. Só o suficiente pra tu parar de achar que “é frescura”:</p>
+
+      <div class="callout">
+        <span class="callout__label">Pré-menopausa / perimenopausa</span>
+        <p>Os ciclos ainda existem, mas começam a <strong>oscilar</strong>. Hormônio sobe e desce sem pedir licença. Libido pode virar montanha-russa: um mês fogo, outro mês nada.</p>
+      </div>
+
+      <div class="callout">
+        <span class="callout__label">Climatério</span>
+        <p>A fase de transição em que o corpo está <strong>reorganizando</strong> o eixo hormonal. Fogacho, suador, sono ruim, irritação, e desejo no banco de reservas, fazem parte do pacote de muitas mulheres.</p>
+      </div>
+
+      <div class="callout">
+        <span class="callout__label">Menopausa</span>
+        <p>Marca clínica: 12 meses sem menstruar (em geral). Não é “fim da mulher”. É uma nova estação. Estrogênio mais baixo pede <strong>mais cuidado</strong> com mucosa, sono, músculo, pele íntima, e mais honestidade com o desejo.</p>
+      </div>
+
+      <h3>Fogacho, sono e humor matam o desejo</h3>
+      <p>Desejo não mora só “lá embaixo”. Mora no sistema nervoso.</p>
+      <ul>
+        <li><strong>Fogacho / suador:</strong> corpo em alerta. Difícil ficar sensual quando tu está em modo “apaga o incêndio”.</li>
+        <li><strong>Sono fragmentado:</strong> sem sono, a libido é a primeira a ser demitida. Não é falta de amor, é biologia de sobrevivência.</li>
+        <li><strong>Humor / irritação:</strong> se tudo irrita, o toque vira barulho. Presença sexual precisa de margem emocional.</li>
+      </ul>
+
+      <p>Por isso, neste guia, sono e cuidado básico não são “dica de bem-estar fofa”. São <strong>base do prazer</strong>.</p>
+
+      <h3>E ele? A cama é de dois</h3>
+      <p>Muitos parceiros nessa faixa também mudam: ereção menos automática, cansaço, vergonha, menos iniciativa. Às vezes chamam de “andropausa” no popular. O ponto não é diagnosticar ele daqui, é lembrar: <strong>se só tu carrega a culpa do “sumiço”, a conta não fecha.</strong> Conversa com dignidade faz parte do mapa. (No Cap. 3 tem um ritual de casal leve pra isso.)</p>
+
+      <div class="callout callout--warn">
+        <span class="callout__label">Não-promessa (honesta)</span>
+        <p>Não existe pílula mágica neste guia. Cuidado com modismos e “chip da beleza” vendidos como solução única pra desejo, corpo e mente não se resolvem só no marketing. O que funciona: informação + ritual +, quando preciso, acompanhamento médico de verdade.</p>
+      </div>
+
+      <div class="page-nav">
+        <a href="#cap-1">← Capítulo 1</a>
+        <a href="#cap-3">Capítulo 3 →</a>
+      </div>
+    </article>
+
+    <!-- ════════════ CAP 3 ════════════ -->
+    <article class="chapter" id="cap-3">
+      <span class="chapter__num">Capítulo 03</span>
+      <h2 class="chapter__title">Reconstruir desejo: mente, corpo, vínculo</h2>
+      <p class="chapter__lead">Três alavancas. Sem virar curso de sedução. Sem esperar vontade cair do céu.</p>
+
+      <h3>1) Mente, a maior zona erógena</h3>
+      <p>O cérebro liga (ou desliga) o resto. Se a tua mente só ensaia lista de tarefa, cobrança e “tô feia”, o corpo obedece o roteiro.</p>
+      <p>Reconstruir desejo começa por <strong>pensar desejo de propósito</strong>:</p>
+      <ul>
+        <li>lembrar do último encontro bom (detalhe sensorial, não pornô genérico);</li>
+        <li>ler ou ouvir algo erótico <em>leve</em>, no teu gosto, com classe;</li>
+        <li>permitir fantasia sem se julgar, desejo não é traição; é oxigênio.</li>
+      </ul>
+
+      <h3>2) Corpo, água, movimento, sono</h3>
+      <p>Ponte curta (o detalhe fino de sono pode aprofundar depois):</p>
+      <ul>
+        <li><strong>Água:</strong> mucosa e pele agradecem hidratação de verdade.</li>
+        <li><strong>Movimento:</strong> 20, 30 min que façam sangue circular, caminhada conta.</li>
+        <li><strong>Sono:</strong> ritual mínimo esta noite (mesmo horário, luz baixa, celular longe da cama 30 min). Sono é afrodisíaco barato.</li>
+      </ul>
+
+      <h3>3) Vínculo, presença, olhar, mistério</h3>
+      <p>Não é joguinho de ignorar pra “grudar”. É o contrário: <strong>presença com intenção</strong>.</p>
+      <ul>
+        <li>olhar nos olhos 10 segundos a mais do que o automático;</li>
+        <li>toque sem cobrança de penetração;</li>
+        <li>um pouco de mistério: não narrar a agenda inteira do desejo, semear.</li>
+      </ul>
+
+      <div class="callout callout--sex">
+        <span class="callout__label">Ritual, Pizza da sexta</span>
+        <p><strong>Marca</strong> um encontro (pode ser em casa): pizza, vinho ou chá, celular no silencioso. Antes, manda uma mensagem curta e provocante, leve, no teu tom, sem cobrança. Exemplo de espírito (adapta pra tua voz): <em>“Sexta é nossa. Quero só a gente… e o que a gente quiser sentir.”</em></p>
+        <p>O objetivo não é performance. É <strong>marcar desejo no calendário</strong>, porque libido adulta se agenda com carinho, não com milagre.</p>
+      </div>
+
+      <h3>Máscara de avião, a mulher que se deseja</h3>
+      <p>Tu já viu o aviso do avião: em caso de descompressão, <strong>coloca a máscara em ti primeiro</strong>, depois ajuda o outro.</p>
+      <p>Na vida íntima é a mesma lógica. Mulher que só oxigena marido, filho, neto, chefe… chega na cama sem ar. Autoestima aqui não é mantra vazio: é <strong>ritual de se escolher</strong>, pele, perfume, 10 minutos só teus, espelho sem insulto.</p>
+
+      <div class="exercise">
+        <p class="exercise__title">Máscara em ti (esta semana)</p>
+        <p class="exercise__hint">Escolhe UM item e cumpre 4 dias seguidos.</p>
+        <ul>
+          <li>□ 10 minutos só meus (corpo sem pressa, banho lento, óleo, respiração)</li>
+          <li>□ Me arrumar pra mim (mesmo sem sair)</li>
+          <li>□ Dormir 30 min mais cedo 4 noites</li>
+          <li>□ Escrever 3 coisas que ainda desejo sentir</li>
+        </ul>
+      </div>
+
+      <div class="page-nav">
+        <a href="#cap-2">← Capítulo 2</a>
+        <a href="#cap-4">Capítulo 4 →</a>
+      </div>
+    </article>
+
+    <!-- ════════════ CAP 4 ════════════ -->
+    <article class="chapter" id="cap-4">
+      <span class="chapter__num">Capítulo 04</span>
+      <h2 class="chapter__title">Quando o corpo pede cuidado</h2>
+      <p class="chapter__lead">Ressecamento e desconforto são comuns e tratáveis. Não são sentença de “acabou”.</p>
+
+      <h3>O que muita mulher sente, e cala</h3>
+      <p>Menos lubrificação natural. Ardência. Relação que doía e virou medo. Vontade que some porque o corpo “avisa” que pode doer. Isso é mais comum do que o Instagram admite, e <strong>tem caminho</strong>.</p>
+
+      <p>Aqui neste guia eu te dou <strong>orientação e dignidade</strong>, não um tutorial técnico completo de fisioterapia ou protocolo médico. Isso é importante: pra não te vender milagre, e pra não te abandonar no escuro.</p>
+
+      <h3>Lubrificação em linguagem simples</h3>
+      <p>Pensa em três pilares (ideia, não receita fechada):</p>
+      <ol>
+        <li><strong>Contexto e tempo:</strong> corpo maduro pede mais preliminares, mais clima, menos pressa.</li>
+        <li><strong>Conforto local:</strong> hidratação íntima / lubrificante adequado (com orientação profissional quando preciso), vergonha nenhuma nisso; é inteligência.</li>
+        <li><strong>Saúde de base:</strong> hormônio, mucosa, assoalho pélvico, infecção, medicação, às vezes o “sumiço” é o corpo pedindo investigação, não resignação.</li>
+      </ol>
+
+      <div class="callout callout--warn">
+        <span class="callout__label">Quando ir no gineco / fisio pélvica</span>
+        <p><strong>Dor</strong> na relação, ardência que não passa, sangramento fora do padrão, <strong>escape de xixi</strong> (nunca é “normal envelhecer pingando”), infecção de repetição, medo físico de qualquer toque. Marca. Dor não é personalidade. É sinal.</p>
+      </div>
+
+      <h3>Ponte honesta pro próximo passo</h3>
+      <p>Se neste capítulo tu se reconheceu (“é o meu corpo pedindo cuidado”), o caminho completo, lubrificação em profundidade, assoalho, casal, rituais noite a noite, vive no treinamento <strong>Sem Pausa</strong> completo. Aqui o combinado do front é: <strong>permissão + mapa + primeiro ritual + saber pra onde ir.</strong></p>
+
+      <div class="exercise">
+        <p class="exercise__title">Meu próximo passo do corpo</p>
+        <p class="exercise__hint">Completa com sinceridade.</p>
+        <p>O que mais me incomoda hoje no corpo íntimo:</p>
+        <div class="lines"><div class="line"></div><div class="line"></div></div>
+        <p style="margin-top:16px">Vou marcar / conversar com (profissional ou parceiro) até a data:</p>
+        <div class="lines"><div class="line"></div></div>
+      </div>
+
+      <div class="page-nav">
+        <a href="#cap-3">← Capítulo 3</a>
+        <a href="#cap-5">Capítulo 5 →</a>
+      </div>
+    </article>
+
+    <!-- ════════════ CAP 5 ════════════ -->
+    <article class="chapter" id="cap-5">
+      <span class="chapter__num">Capítulo 05</span>
+      <h2 class="chapter__title">Ritual Sem Pausa, 7 dias</h2>
+      <p class="chapter__lead">Uma ação por dia. Tom desejo. Sem performance. Sem milagre, com presença.</p>
+
+      <p>Imprime ou salva no celular. Marca com ✔. Se perder um dia, não recomeça do zero: retoma no dia seguinte. Desejo adulto não é disciplina militar, é constância com carinho.</p>
+
+      <div class="days">
+        <article class="day">
+          <span class="day__num">01</span>
+          <div>
+            <h3 class="day__title">Escrever o que eu ainda quero sentir</h3>
+            <p class="day__body">Na cama e comigo. 10 linhas. Sem censura. (Usa o exercício do Cap. 1 se preferir.)</p>
+          </div>
+        </article>
+        <article class="day">
+          <span class="day__num">02</span>
+          <div>
+            <h3 class="day__title">Sono como afrodisíaco</h3>
+            <p class="day__body">Ritual mínimo: mesmo horário, luz baixa, celular longe 30 min. Anota como acordou o desejo (mesmo que “mais paciente”).</p>
+          </div>
+        </article>
+        <article class="day">
+          <span class="day__num">03</span>
+          <div>
+            <h3 class="day__title">10 minutos só teus</h3>
+            <p class="day__body">Corpo sem pressa. Banho lento, óleo, respiração, espelho sem insulto. Máscara em ti.</p>
+          </div>
+        </article>
+        <article class="day">
+          <span class="day__num">04</span>
+          <div>
+            <h3 class="day__title">Pensar desejo de propósito</h3>
+            <p class="day__body">Áudio/leitura erótica leve <strong>ou</strong> memória boa do último encontro que te acendeu. Escolhe um. 15 minutos.</p>
+          </div>
+        </article>
+        <article class="day">
+          <span class="day__num">05</span>
+          <div>
+            <h3 class="day__title">Provocação leve / carinho sem cobrança</h3>
+            <p class="day__body">Mensagem, beijo fora da cama, massagem nas costas, sem meta de penetração. Presença &gt; performance.</p>
+          </div>
+        </article>
+        <article class="day">
+          <span class="day__num">06</span>
+          <div>
+            <h3 class="day__title">Pizza da sexta (marcar)</h3>
+            <p class="day__body">Agenda o encontro. Manda a mensagem. Compra o que for simbólico (pizza, vela, playlist). Cumpre.</p>
+          </div>
+        </article>
+        <article class="day">
+          <span class="day__num">07</span>
+          <div>
+            <h3 class="day__title">Revisar: o que reacendeu × o que ainda dói</h3>
+            <p class="day__body">Volta à lista do Cap. 1. O que aqueceu? O que ainda pede cuidado (corpo/vínculo)? Escreve o próximo passo.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="exercise">
+        <p class="exercise__title">Diário rápido do Dia 7</p>
+        <p>O que reacendeu:</p>
+        <div class="lines"><div class="line"></div><div class="line"></div></div>
+        <p style="margin-top:16px">O que ainda incomoda / dói / falta:</p>
+        <div class="lines"><div class="line"></div><div class="line"></div></div>
+        <p style="margin-top:16px">Meu próximo passo (esta semana):</p>
+        <div class="lines"><div class="line"></div></div>
+      </div>
+
+      <div class="page-nav">
+        <a href="#cap-4">← Capítulo 4</a>
+        <a href="#cap-6">Capítulo 6 →</a>
+      </div>
+    </article>
+
+    <!-- ════════════ CAP 6 ════════════ -->
+    <article class="chapter" id="cap-6">
+      <span class="chapter__num">Capítulo 06</span>
+      <h2 class="chapter__title">Checklist Sem Pausa</h2>
+      <p class="chapter__lead">Imprimível. Nove blocos pra não improvisar a fase mais longa da tua vida adulta. Sexualidade em destaque, no topo, não enterrada.</p>
+
+      <div class="check-grid">
+        <section class="check-block check-block--hero">
+          <h3>Sexualidade · desejo · relacionamento <span class="check-block__tag">Prioridade</span></h3>
+          <ul>
+            <li>Permissão interna: “prazer continua possível pra mim”</li>
+            <li>1 ritual de desejo esta semana (pizza / provocação / 10 min só meus)</li>
+            <li>Conversa honesta com o parceiro (ou decisão consciente se estou solo)</li>
+            <li>Se há dor/ressecamento: próximo passo clínico anotado</li>
+            <li>Beijo, olhar ou carinho sem cobrança, pelo menos 2× na semana</li>
+          </ul>
+        </section>
+
+        <section class="check-block">
+          <h3>Sono <span class="check-block__tag">Base</span></h3>
+          <ul>
+            <li>Horário de deitar mais estável</li>
+            <li>30 min sem tela antes de dormir</li>
+            <li>Quarto mais fresco / escuro quando possível</li>
+            <li>Se o suador acorda: anotar frequência pra levar ao médico</li>
+          </ul>
+        </section>
+
+        <section class="check-block">
+          <h3>Corpo em movimento</h3>
+          <ul>
+            <li>Caminhada ou movimento 20, 30 min · 3× na semana</li>
+            <li>Alongar quadril / respiração diafragmática 5 min</li>
+            <li>Força leve (mesmo com peso do corpo) 2× na semana</li>
+          </ul>
+        </section>
+
+        <section class="check-block">
+          <h3>Água · alimentação · energia</h3>
+          <ul>
+            <li>Água ao longo do dia (não só café)</li>
+            <li>Reduzir álcool perto da noite se o sono piora</li>
+            <li>Refeição com proteína + fibra no almoço (energia estável)</li>
+          </ul>
+        </section>
+
+        <section class="check-block">
+          <h3>Mente · humor · estresse</h3>
+          <ul>
+            <li>Limitar notícia/scroll que só irrita à noite</li>
+            <li>1 pausa real no dia (chá, janela, silêncio)</li>
+            <li>Se ansiedade/depressão pesam: procurar ajuda, desejo também mora aí</li>
+          </ul>
+        </section>
+
+        <section class="check-block">
+          <h3>Autoestima · “máscara em ti”</h3>
+          <ul>
+            <li>Ritual de se escolher (pele, cabelo, perfume) 2× na semana</li>
+            <li>Espelho: 1 elogio factual (não piada cruel)</li>
+            <li>Roupa / lingeries que te façam sentir mulher, pra ti</li>
+          </ul>
+        </section>
+
+        <section class="check-block">
+          <h3>Saúde da mulher</h3>
+          <ul>
+            <li>Check-up / gineco em dia (ou agendado)</li>
+            <li>Listar sintomas pra consulta (sono, fogacho, dor, libido)</li>
+            <li>Não normalizar dor íntima nem escape de xixi</li>
+          </ul>
+        </section>
+
+        <section class="check-block">
+          <h3>Casa · carga mental</h3>
+          <ul>
+            <li>Dividir 1 tarefa que te drena (pedir / contratar / simplificar)</li>
+            <li>1 noite por semana sem “resolver a casa”</li>
+            <li>Dizer não a 1 compromisso que só alimenta culpa</li>
+          </ul>
+        </section>
+
+        <section class="check-block">
+          <h3>Agenda do prazer</h3>
+          <ul>
+            <li>Bloquear no calendário o Ritual 7 dias (ou reiniciar)</li>
+            <li>Marcar a “pizza da sexta” (ou equivalente)</li>
+            <li>Revisar este checklist todo domingo · 10 min</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="page-nav">
+        <a href="#cap-5">← Capítulo 5</a>
+        <a href="#encerramento">Encerramento →</a>
+      </div>
+    </article>
+
+    <!-- ════════════ ENCERRAMENTO ════════════ -->
+    <article class="chapter" id="encerramento">
+      <span class="chapter__num">Encerramento</span>
+      <h2 class="chapter__title">Segunda adolescência: prazer com mais verdade</h2>
+      <p class="chapter__lead">Não é voltar aos 20. É ocupar os teus 40, 50, 60 com mais consciência, e sem pausa no que te faz mulher.</p>
+
+      <p>Se neste guia tu só levou uma coisa, leva esta: <strong>menopausa muda o corpo. Não cancela teu direito a desejo, a prazer e a te sentires desejada com dignidade.</strong></p>
+
+      <p>Libido se constrói. Sono é base. Corpo pede cuidado sem vergonha. Vínculo pede presença. E tu, antes de oxigenar o mundo, coloca a máscara em ti.</p>
+
+      <p>Na área de membros, de tempos em tempos, eu deixo carinho extra (aulas, conversas, profundidade). Não preciso listar aqui: o combinado do front é este guia. O resto, quando aparecer, é presente.</p>
+
+      <div class="book-end">
+        <h2>Sem pausa.</h2>
+        <p>Tu ainda é mulher. Tu ainda pode sentir. Tu ainda pode querer.</p>
+        <p>Com classe. Com verdade. Com corpo na estação que é tua agora.</p>
+        <p class="kiss">Beijo bom, e sem pausa.<br>Rita Rostirolla</p>
+      </div>
+
+      <p class="disclaimer">
+        © Rita Rostirolla · Guia Sem Pausa<br>
+        Uso pessoal da compradora. Este material não substitui acompanhamento médico.<br>
+        Dúvidas de acesso: suporte da área de membros / Hotmart.
+      </p>
+
+      <div class="page-nav">
+        <a href="#cap-6">← Capítulo 6</a>
+        <a href="#capa">Voltar à capa</a>
+      </div>
+    </article>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
